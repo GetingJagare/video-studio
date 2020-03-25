@@ -1,0 +1,11 @@
+#marquee {
+    overflow: hidden;
+}
+
+#marquee > div {
+    white-space: nowrap;
+}
+
+#marquee > div > * {
+    display: inline-block;
+}

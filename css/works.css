@@ -1,0 +1,49 @@
+.works > a {
+    display: block;
+    width: 50%;
+    position: relative;
+    transition: all 100ms linear;
+}
+
+.works > a:hover {
+    z-index: 99999;
+    font-style: italic;
+}
+
+.works > a:nth-child(n+2) {
+    margin-top: -5%;
+}
+
+.works > a:nth-child(odd) {
+    left: 10%;
+}
+
+.works > a:nth-child(even) {
+    left: 40%;
+}
+
+.works > a > .work-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.7vw;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 100%;
+    white-space: nowrap;
+    display: none;
+}
+
+.works > a > .work-name {
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.works > a:nth-child(even) > .work-name {
+    right: 0;
+}
