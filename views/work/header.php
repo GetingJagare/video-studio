@@ -19,7 +19,7 @@ $work = $works[$workId - 1];
             <div class="line"></div><div class="line"></div><div class="line"></div>
         </button>
     </div>
-    <ul class="navbar-nav navbar-collapse collapse navbar-flex-1-section">
+    <ul class="navbar-nav navbar-collapse collapse navbar-flex-1-section justify-content-end">
         <li class="nav-item"><a class="nav-link text-nowrap text-right mx-3 my-2 p-0"
                                 href="<?php echo Application::$app->config['menu'][$languageCode]['works']['link']; ?>">
                 <?php echo Application::$app->config['menu'][$languageCode]['works']['title']; ?></a>
