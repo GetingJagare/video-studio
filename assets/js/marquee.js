@@ -1,6 +1,6 @@
 "use strict";
 
-$(document).ready(() => {
+$(document).ready(function() {
 
     const marqueeMinWidth = 10000;
     let marquee = $("#marquee");
@@ -9,7 +9,7 @@ $(document).ready(() => {
     let marqueeAnimationTime;
 
     if (marquee.length !== 0) {
-        marquee.children().each((i, el) => {
+        marquee.children().each(function(i, el) {
             marqueeWidth += $(el).width();
             marqueeItems.push($(el).clone().wrap("<div><div></div></div>").parent().parent().html());
         });

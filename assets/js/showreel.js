@@ -1,30 +1,30 @@
 "use strict";
 
-$(document).ready(() => {
+$(document).ready(function () {
     let scrollTop = 0;
     let cancelShowreelAnimations = false;
 
 
     function startShowreelAnimations() {
-        setTimeout(() => {
+        setTimeout(function () {
             if (!cancelShowreelAnimations) {
                 $(".syndicate-logo").fadeIn(1000);
             }
         }, 1000);
 
-        setTimeout(() => {
+        setTimeout(function () {
             if (!cancelShowreelAnimations) {
                 $(".syndicate-logo").fadeOut(1000);
             }
         }, 6000);
 
-        setTimeout(() => {
+        setTimeout(function () {
             if (!cancelShowreelAnimations) {
                 $(".syndicate-logline").fadeIn(1000);
             }
         }, 6000);
 
-        setTimeout(() => {
+        setTimeout(function () {
             if (!cancelShowreelAnimations) {
                 $(".chevron").fadeIn(1000);
             }
