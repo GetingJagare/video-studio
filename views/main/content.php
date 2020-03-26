@@ -36,8 +36,10 @@ $worksToShow = 9;
                     echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">' . "\n";
                 }
                 echo '</video>' . "\n";
-                echo '<div class="work-info">' . Application::$app->config['works'][$i][1][$languageCode]['posterDescription'] . '</div>' . "\n";
-                echo '<div class="work-name">' . Application::$app->config['works'][$i][1][$languageCode]['navbarTitle'] . '</div>' . "\n";
+                echo '<div class="work-info">' .
+                    Application::$app->config['works'][$i][1][$languageCode]['posterDescription'] . '</div>';
+                echo '<div class="work-name ' . ($i % 2 == 0 ? 'text-left' : 'text-right') . '">' .
+                    Application::$app->config['works'][$i][1][$languageCode]['navbarTitle'] . '</div>';
                 echo '</a>' . "\n\n";
             }
             ?>

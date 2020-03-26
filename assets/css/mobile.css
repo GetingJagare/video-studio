@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width: 767.98px) {
 
     .page-title {
@@ -56,6 +58,7 @@
 
     .work-title {
         margin-left: 2.5rem;
+        margin-right: 2.5rem;
         font-size: 2rem;
     }
 

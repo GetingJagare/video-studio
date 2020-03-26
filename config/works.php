@@ -8,7 +8,7 @@ return [
     ['/^\/works\/1\/.*$/', [
         'en' => [
             'url' => '/works/1',
-            'title' => 'Lorem1 ipsum dolor sit<br>amet, consectetur adipi-',
+            'title' => 'Lorem1 ipsum dolor sit amet, consectetur adipi-',
             'pageTitle' => 'Work #1',
             'navbarTitle' => 'Work #1',
             'description' => 'Lorem1 ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo',
@@ -24,7 +24,7 @@ return [
                 ['tag' => 'hashtag #1-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/1',
-            'title' => 'Лорем1 ипсум долор сит<br>амет, консектетур адипи-',
+            'title' => 'Лорем1 ипсум долор сит амет, консектетур адипи-',
             'pageTitle' => 'Работа №1',
             'navbarTitle' => 'Работа №1',
             'description' => 'Лорем1 ипсум долор сит амет, консектетур адипишинг элит, сед<br>до эюзмод темпор инчидидунт ут лаборе эт долоре манья<br>аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон<br>улламко лаборис низи ут аликуип экс эа коммодо',
@@ -42,7 +42,7 @@ return [
     ['/^\/works\/2\/.*$/', [
         'en' => [
             'url' => '/works/2',
-            'title' => 'Lorem2 ipsum dolor sit<br>amet, consectetur adipi-',
+            'title' => 'Lorem2 ipsum dolor sit amet, consectetur adipi-',
             'pageTitle' => 'Work #2',
             'navbarTitle' => 'Work #2',
             'description' => 'Lorem2 ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo',
@@ -58,7 +58,7 @@ return [
                 ['tag' => 'hashtag #2-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/2',
-            'title' => 'Лорем2 ипсум долор сит<br>амет, консектетур адипи-',
+            'title' => 'Лорем2 ипсум долор сит амет, консектетур адипи-',
             'pageTitle' => 'Работа №2',
             'navbarTitle' => 'Работа №2',
             'description' => 'Лорем2 ипсум долор сит амет, консектетур адипишинг элит, сед<br>до эюзмод темпор инчидидунт ут лаборе эт долоре манья<br>аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон<br>улламко лаборис низи ут аликуип экс эа коммодо',
@@ -76,7 +76,7 @@ return [
     ['/^\/works\/3\/.*$/', [
         'en' => [
             'url' => '/works/3',
-            'title' => 'Lorem3 ipsum dolor sit<br>amet, consectetur adipi-',
+            'title' => 'Lorem3 ipsum dolor sit amet, consectetur adipi-',
             'pageTitle' => 'Work #3',
             'navbarTitle' => 'Work #3',
             'description' => 'Lorem3 ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo',
@@ -92,7 +92,7 @@ return [
                 ['tag' => 'hashtag #3-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/3',
-            'title' => 'Лорем3 ипсум долор сит<br>амет, консектетур адипи-',
+            'title' => 'Лорем3 ипсум долор сит амет, консектетур адипи-',
             'pageTitle' => 'Работа №3',
             'navbarTitle' => 'Работа №3',
             'description' => 'Лорем3 ипсум долор сит амет, консектетур адипишинг элит, сед<br>до эюзмод темпор инчидидунт ут лаборе эт долоре манья<br>аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон<br>улламко лаборис низи ут аликуип экс эа коммодо',
@@ -110,7 +110,7 @@ return [
     ['/^\/works\/4\/.*$/', [
         'en' => [
             'url' => '/works/4',
-            'title' => 'Lorem4 ipsum dolor sit<br>amet, consectetur adipi-',
+            'title' => 'Lorem4 ipsum dolor sit amet, consectetur adipi-',
             'pageTitle' => 'Work #4',
             'navbarTitle' => 'Work #4',
             'description' => 'Lorem4 ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo',
@@ -126,7 +126,7 @@ return [
                 ['tag' => 'hashtag #4-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/4',
-            'title' => 'Лорем4 ипсум долор сит<br>амет, консектетур адипи-',
+            'title' => 'Лорем4 ипсум долор сит амет, консектетур адипи-',
             'pageTitle' => 'Работа №4',
             'navbarTitle' => 'Работа №4',
             'description' => 'Лорем4 ипсум долор сит амет, консектетур адипишинг элит, сед<br>до эюзмод темпор инчидидунт ут лаборе эт долоре манья<br>аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон<br>улламко лаборис низи ут аликуип экс эа коммодо',
@@ -144,7 +144,7 @@ return [
     ['/^\/works\/5\/.*$/', [
         'en' => [
             'url' => '/works/5',
-            'title' => 'Lorem5 ipsum dolor sit<br>amet, consectetur adipi-',
+            'title' => 'Lorem5 ipsum dolor sit amet, consectetur adipi-',
             'pageTitle' => 'Work #5',
             'navbarTitle' => 'Work #5',
             'description' => 'Lorem5 ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo',
@@ -160,7 +160,7 @@ return [
                 ['tag' => 'hashtag #5-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/5',
-            'title' => 'Лорем5 ипсум долор сит<br>амет, консектетур адипи-',
+            'title' => 'Лорем5 ипсум долор сит амет, консектетур адипи-',
             'pageTitle' => 'Работа №5',
             'navbarTitle' => 'Работа №5',
             'description' => 'Лорем5 ипсум долор сит амет, консектетур адипишинг элит, сед<br>до эюзмод темпор инчидидунт ут лаборе эт долоре манья<br>аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон<br>улламко лаборис низи ут аликуип экс эа коммодо',
@@ -178,7 +178,7 @@ return [
     ['/^\/works\/6\/.*$/', [
         'en' => [
             'url' => '/works/6',
-            'title' => 'Lorem6 ipsum dolor sit<br>amet, consectetur adipi-',
+            'title' => 'Lorem6 ipsum dolor sit amet, consectetur adipi-',
             'pageTitle' => 'Work #6',
             'navbarTitle' => 'Work #6',
             'description' => 'Lorem6 ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo',
@@ -194,7 +194,7 @@ return [
                 ['tag' => 'hashtag #6-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/6',
-            'title' => 'Лорем6 ипсум долор сит<br>амет, консектетур адипи-',
+            'title' => 'Лорем6 ипсум долор сит амет, консектетур адипи-',
             'pageTitle' => 'Работа №6',
             'navbarTitle' => 'Работа №6',
             'description' => 'Лорем6 ипсум долор сит амет, консектетур адипишинг элит, сед<br>до эюзмод темпор инчидидунт ут лаборе эт долоре манья<br>аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон<br>улламко лаборис низи ут аликуип экс эа коммодо',
@@ -212,7 +212,7 @@ return [
     ['/^\/works\/7\/.*$/', [
         'en' => [
             'url' => '/works/7',
-            'title' => 'Lorem7 ipsum dolor sit<br>amet, consectetur adipi-',
+            'title' => 'Lorem7 ipsum dolor sit amet, consectetur adipi-',
             'pageTitle' => 'Work #7',
             'navbarTitle' => 'Work #7',
             'description' => 'Lorem7 ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo',
@@ -228,7 +228,7 @@ return [
                 ['tag' => 'hashtag #7-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/7',
-            'title' => 'Лорем7 ипсум долор сит<br>амет, консектетур адипи-',
+            'title' => 'Лорем7 ипсум долор сит амет, консектетур адипи-',
             'pageTitle' => 'Работа №7',
             'navbarTitle' => 'Работа №7',
             'description' => 'Лорем7 ипсум долор сит амет, консектетур адипишинг элит, сед<br>до эюзмод темпор инчидидунт ут лаборе эт долоре манья<br>аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон<br>улламко лаборис низи ут аликуип экс эа коммодо',
@@ -246,7 +246,7 @@ return [
     ['/^\/works\/8\/.*$/', [
         'en' => [
             'url' => '/works/8',
-            'title' => 'Lorem8 ipsum dolor sit<br>amet, consectetur adipi-',
+            'title' => 'Lorem8 ipsum dolor sit amet, consectetur adipi-',
             'pageTitle' => 'Work #8',
             'navbarTitle' => 'Work #8',
             'description' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo',
@@ -262,7 +262,7 @@ return [
                 ['tag' => 'hashtag #8-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/8',
-            'title' => 'Лорем8 ипсум долор сит<br>амет, консектетур адипи-',
+            'title' => 'Лорем8 ипсум долор сит амет, консектетур адипи-',
             'pageTitle' => 'Работа №8',
             'navbarTitle' => 'Работа №8',
             'description' => 'Лорем8 ипсум долор сит амет, консектетур адипишинг элит, сед<br>до эюзмод темпор инчидидунт ут лаборе эт долоре манья<br>аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон<br>улламко лаборис низи ут аликуип экс эа коммодо',
@@ -280,7 +280,7 @@ return [
     ['/^\/works\/9\/.*$/', [
         'en' => [
             'url' => '/works/9',
-            'title' => 'Lorem9 ipsum dolor sit<br>amet, consectetur adipi-',
+            'title' => 'Lorem9 ipsum dolor sit amet, consectetur adipi-',
             'pageTitle' => 'Work #9',
             'navbarTitle' => 'Work #9',
             'description' => 'Lorem9 ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo',
@@ -296,7 +296,7 @@ return [
                 ['tag' => 'hashtag #9-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/9',
-            'title' => 'Лорем9 ипсум долор сит<br>амет, консектетур адипи-',
+            'title' => 'Лорем9 ипсум долор сит амет, консектетур адипи-',
             'pageTitle' => 'Работа №9',
             'navbarTitle' => 'Работа №9',
             'description' => 'Лорем9 ипсум долор сит амет, консектетур адипишинг элит, сед<br>до эюзмод темпор инчидидунт ут лаборе эт долоре манья<br>аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон<br>улламко лаборис низи ут аликуип экс эа коммодо',

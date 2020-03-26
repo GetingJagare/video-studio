@@ -103,7 +103,7 @@ class AssetManager
         $jsAssets = array_merge(
             self::VENDOR_ASSETS['js'],
             isset(self::ASSETS_DATA[$this->route]['js']) ? self::ASSETS_DATA[$this->route]['js'] : [],
-            self::MOBILE_ASSETS['css']
+            self::MOBILE_ASSETS['js']
         );
 
         foreach ($cssAssets as $cssAsset) {

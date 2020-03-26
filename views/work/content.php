@@ -15,7 +15,7 @@ $work = $works[$workId - 1];
     <div>
         <video id="work-player" poster="<?php echo $work[1][$languageCode]['posterImage']; ?>">
             <?php
-            foreach ($work['videoFiles'] as $videoFile) {
+            foreach ($work[1][$languageCode]['videoFiles'] as $videoFile) {
                 echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">' . "\n";
             }
             ?>
@@ -23,7 +23,7 @@ $work = $works[$workId - 1];
         <div class="unmute-button"></div>
     </div>
 
-    <h1 class="work-title"><?php echo $work[1][$languageCode]['title']; ?></h1>
+    <h1 class="work-title text-center"><?php echo $work[1][$languageCode]['title']; ?></h1>
 
     <p class="work-description"><?php echo $work[1][$languageCode]['description']; ?></p>
 

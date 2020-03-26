@@ -1,12 +1,14 @@
 <?php
 
-if ($_GET['lang'] === 'en') {
+$langCode = isset($_GET['lang']) ? $_GET['lang'] : '';
+
+if ($langCode === 'en') {
     setcookie('lang', 'en', time() + 60 * 60 * 24 * 30, '/');
     header('Location: .', true, 303);
     exit;
 }
 
-if ($_GET['lang'] === 'ru') {
+if ($langCode === 'ru') {
     setcookie('lang', 'ru', time() + 60 * 60 * 24 * 30, '/');
     header('Location: .', true, 303);
     exit;
