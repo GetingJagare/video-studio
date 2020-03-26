@@ -1,0 +1,65 @@
+@media screen and (max-width: 767.98px) {
+
+    .page-title {
+        margin: 3rem 2.5rem 3rem 0;
+        text-align: right;
+        font-size: 2rem;
+    }
+
+    .contacts,
+    .about > .row > .col:nth-child(1),
+    .about > .row > .col:nth-child(2) {
+        margin: 0 2.5rem;
+        padding: 0;
+    }
+
+    .contacts > a:nth-of-type(1) {
+        margin-left: 0;
+    }
+
+    .about > .row > .col:nth-child(1),
+    .about > .row > .col:nth-child(2) {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .works > a:nth-child(odd) {
+        margin-left: 2.5rem;
+        left: auto;
+    }
+
+    .works > a:nth-child(even) {
+        margin-right: 2.5rem;
+        margin-left: auto;
+        left: auto;
+    }
+
+    .works > a {
+        width: 65%;
+    }
+
+    .works > a:nth-child(n+2) {
+        margin-top: 10%;
+    }
+
+    .works > a > .work-name {
+        font-size: 0.9rem;
+    }
+
+    .works > a:nth-child(odd) > .work-name {
+        text-align: left;
+    }
+
+    .works > a:nth-child(even) > .work-name {
+        text-align: right;
+    }
+
+    .work-title {
+        margin-left: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .work-description {
+        margin-left: 2.5rem;
+    }
+}

@@ -13,7 +13,7 @@ class AssetManager
 
     const VENDOR_ASSETS = [
         'css' => [
-            '/assets/css/bootstrap-4.4.1/bootstrap.min.css'
+            '/assets/css/bootstrap-4.4.1/bootstrap.min.css',
         ],
         'js' => [
             '/assets/js/jquery-3.4.1/jquery-3.4.1.min.js',
@@ -78,6 +78,13 @@ class AssetManager
             ]
         ];
 
+    const MOBILE_ASSETS = [
+        'css' => [
+            '/assets/css/mobile.css',
+        ],
+        'js' => []
+    ];
+
     /** @var string  */
     public $css = "";
 
@@ -89,12 +96,14 @@ class AssetManager
 
         $cssAssets = array_merge(
             self::VENDOR_ASSETS['css'],
-            isset(self::ASSETS_DATA[$this->route]['css']) ? self::ASSETS_DATA[$this->route]['css'] : []
+            isset(self::ASSETS_DATA[$this->route]['css']) ? self::ASSETS_DATA[$this->route]['css'] : [],
+            self::MOBILE_ASSETS['css']
         );
 
         $jsAssets = array_merge(
             self::VENDOR_ASSETS['js'],
-            isset(self::ASSETS_DATA[$this->route]['js']) ? self::ASSETS_DATA[$this->route]['js'] : []
+            isset(self::ASSETS_DATA[$this->route]['js']) ? self::ASSETS_DATA[$this->route]['js'] : [],
+            self::MOBILE_ASSETS['css']
         );
 
         foreach ($cssAssets as $cssAsset) {

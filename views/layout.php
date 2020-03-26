@@ -9,6 +9,8 @@
 
 </head>
 
-<?php echo $content; ?>
+<body>
+    <?php echo $content; ?>
+</body>
 
 </html>

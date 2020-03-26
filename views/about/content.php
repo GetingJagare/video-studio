@@ -4,7 +4,7 @@ $languageCode = Application::$app->config['language']['code'];
 
 ?>
 
-<body class="d-flex flex-column min-vh-100">
+<div class=a"d-flex flex-column min-vh-100">
 
 <?php echo $header; ?>
 
@@ -25,4 +25,4 @@ $languageCode = Application::$app->config['language']['code'];
 
 <?php echo Application::$app->assetManager->js; ?>
 
-</body>
+</div>
