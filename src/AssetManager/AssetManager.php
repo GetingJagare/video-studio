@@ -17,7 +17,8 @@ class AssetManager
         ],
         'js' => [
             '/assets/js/jquery-3.4.1/jquery-3.4.1.min.js',
-            '/assets/js/bootstrap-4.4.1/bootstrap.bundle.min.js'
+            '/assets/js/bootstrap-4.4.1/bootstrap.bundle.min.js',
+            '/assets/js/main.js',
         ]
     ];
 

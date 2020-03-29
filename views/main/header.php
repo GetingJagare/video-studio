@@ -7,9 +7,7 @@
 <nav class="navbar navbar-expand-md align-items-start mt-2 mx-2">
     <a class="navbar-brand p-0 mx-3 mb-0" href="/"><img src="/assets/img/syndicate-logo.png" alt="Syndicate Logo"></a>
     <button class="navbar-toggler mx-3 my-2 p-0" type="button" data-toggle="collapse" data-target=".collapsible-item">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+        <div class="navbar-toggler__line"></div>
     </button>
     <div class="navbar-collapse collapse collapsible-item">
         <ul class="navbar-nav ml-auto">

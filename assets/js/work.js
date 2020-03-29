@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
 
     function unmute() {
-        if (workPlayer.muted == true) {
+        if (workPlayer.muted === true) {
             workPlayer.muted = false;
         } else {
             workPlayer.muted = true;

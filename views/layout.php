@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <div class="black-back"></div>
+
     <?php echo $content; ?>
 </body>
 
