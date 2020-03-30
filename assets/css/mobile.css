@@ -12,6 +12,11 @@
         font-size: 2rem;
     }
 
+    .about > .row > .col > p {
+        line-height: 1.1;
+        font-size: 1rem;
+    }
+
     .contacts,
     .about > .row > .col:nth-child(1),
     .about > .row > .col:nth-child(2) {
@@ -166,5 +171,9 @@
     .syndicate-logline {
         font-size: 5vw;
         max-width: 100%;
+    }
+
+    .marquee__logo {
+        max-height: 90px;
     }
 }

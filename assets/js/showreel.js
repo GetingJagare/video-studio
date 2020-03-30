@@ -1,9 +1,23 @@
 "use strict";
 
+window.addEventListener('DOMContentLoaded', function (event) {
+
+});
+
 $(document).ready(function () {
     let scrollTop = 0;
     let cancelShowreelAnimations = false;
+    let cancelScroll = false;
 
+
+    window.addEventListener('scroll', function (event) {
+
+        if (cancelScroll) {
+
+            event.preventDefault();
+        }
+
+    });
 
     function startShowreelAnimations() {
         setTimeout(function () {
@@ -33,14 +47,23 @@ $(document).ready(function () {
 
 
     function scrollHelper(e) {
+        cancelScroll = true;
+
         let oldScrollTop = scrollTop;
         scrollTop = $(this).scrollTop();
 
         if (e === null || scrollTop - oldScrollTop > 0) {
             $(window).unbind("scroll");
             cancelShowreelAnimations = true;
-            $("html, body").animate({scrollTop: $(".under-showreel").offset().top}, 1500, "swing", () => {$(".showreel").hide(); window.scrollTo(0, 10)});
-            setTimeout(() => {
+            $("html, body").animate({scrollTop: $(".under-showreel").offset().top}, 1500, "swing", function() {
+                $(".showreel").hide();
+
+                cancelScroll = false;
+
+                window.scrollTo(0, 10)
+            });
+
+            setTimeout(function() {
                 $(".syndicate-logo").fadeOut();
                 $(".syndicate-logline").fadeOut();
                 $(".chevron").fadeOut();
@@ -50,7 +73,11 @@ $(document).ready(function () {
 
 
     $("html, body").scrollTop(0);
-    $(".chevron").click(() => scrollHelper(null));
+
+    $(".chevron").click(function () {
+        scrollHelper(null);
+    });
+
     $(window).scroll(scrollHelper);
     startShowreelAnimations();
 });

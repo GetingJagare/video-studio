@@ -10,7 +10,6 @@
 
 @font-face {
     font-family: "Gotham Pro";
-    font-style: normal;
     font-style: italic;
     src: url("../img/fonts/GothamPro-LightItalic.eot?") format("eot"),
     url("../img/fonts/GothamPro-LightItalic.otf")  format("opentype"),
@@ -43,7 +42,7 @@
 
 body {
     background-color: black;
-    font-family: "Gotham Pro";
+    font-family: 'Gotham Pro';
     position: relative;
 }
 
@@ -206,18 +205,6 @@ p.copyright {
     font-weight: normal;
     font-style: normal;
 }
-
-/*.navbar-toggler .line {
-    background-color: white;
-    width: 1.59rem;
-    height: 0.14rem;
-    margin-bottom: 0.29rem;
-}*/
-
-/*
-.navbar-toggler .line:last-child {
-    margin-bottom: 0;
-}*/
 
 .navbar {
     z-index: 1000;
