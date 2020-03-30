@@ -2,6 +2,10 @@
 
 @media screen and (max-width: 767.98px) {
 
+    .m-min-vh-75 {
+        min-height: 75vh !important;
+    }
+
     .page-title {
         margin: 3rem 2.5rem 3rem 0;
         text-align: right;
@@ -67,8 +71,8 @@
     }
 
     .navbar-toggler {
-        height: 1rem;
-        width: 1.59rem;
+        height: 1.2rem;
+        width: 2rem;
         position: relative;
         display: flex;
         align-items: center;
@@ -83,6 +87,7 @@
 
     .navbar-collapse .nav-link {
         margin-right: 2rem!important;
+        font-size: 1.2rem;
     }
 
     .navbar-toggler.is-active + .navbar-collapse.collapse {
@@ -107,7 +112,7 @@
     .navbar-toggler:before,
     .navbar-toggler:after {
         width: 100%;
-        height: 0.14rem;
+        height: 0.12rem;
         background-color: white;
         left: 0;
     }
@@ -140,12 +145,26 @@
 
     .navbar-toggler.is-active:before {
         transform: rotate(45deg);
-        top: 0.43rem;
+        top: 0.6rem;
     }
 
     .navbar-toggler.is-active:after {
         transform: rotate(-45deg);
         bottom: 0;
-        top: 0.43rem;
+        top: 0.6rem;
+    }
+
+    .navbar-brand > img {
+        height: 1.2rem;
+    }
+
+    .navbar .navbar-text {
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+
+    .syndicate-logline {
+        font-size: 5vw;
+        max-width: 100%;
     }
 }
