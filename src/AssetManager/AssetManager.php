@@ -25,25 +25,25 @@ class AssetManager
     const ASSETS_DATA = [
             'main' => [
                 'css' => [
-                    '/assets/css/plyr-3.5.10/plyr.css',
+                    /*'/assets/css/plyr-3.5.10/plyr.css',*/
                     '/assets/css/styles.css',
                     '/assets/css/showreel.css',
                     '/assets/css/works.css',
                 ],
                 'js' => [
-                    '/assets/js/plyr-3.5.10/plyr.min.js',
+                    /*'/assets/js/plyr-3.5.10/plyr.min.js',*/
                     '/assets/js/showreel.js',
                     '/assets/js/works.js'
                 ]
             ],
             'works' => [
                 'css' => [
-                    '/assets/css/plyr-3.5.10/plyr.css',
+                    /*'/assets/css/plyr-3.5.10/plyr.css',*/
                     '/assets/css/styles.css',
                     '/assets/css/works.css',
                 ],
                 'js' => [
-                    '/assets/js/plyr-3.5.10/plyr.min.js',
+                    /*'/assets/js/plyr-3.5.10/plyr.min.js',*/
                     '/assets/js/works.js'
                 ]
             ],
@@ -67,12 +67,12 @@ class AssetManager
             ],
             'work' => [
                 'js' => [
-                    '/assets/js/plyr-3.5.10/plyr.min.js',
+                    /*'/assets/js/plyr-3.5.10/plyr.min.js',*/
                     '/assets/js/work.js',
                     '/assets/js/marquee.js'
                 ],
                 'css' => [
-                    '/assets/css/plyr-3.5.10/plyr.css',
+                    /*'/assets/css/plyr-3.5.10/plyr.css',*/
                     '/assets/css/styles.css',
                     '/assets/css/marquee.css'
                 ]

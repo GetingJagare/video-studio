@@ -12,16 +12,20 @@ $languageCode = Application::$app->config['language']['code'];
         <?php
         $i = 1;
         foreach (Application::$app->config['works'] as $i => $work) {
-            echo '<a href="' . $work[1][$languageCode]['url'] . '">' . "\n";
-            echo '<video id="playerwork-' . $i . '-player" poster="' . $work[1][$languageCode]['posterImage'] . '">' . "\n";
+
+            echo '<a href="' . $work[1][$languageCode]['url'] . '" class="work">';
+            echo '<video id="playerwork-' . $i . '-player" poster="' . $work[1][$languageCode]['posterImage'] .
+                '" class="work__video" muted loop>';
+
             foreach ($work[1][$languageCode]['videoFiles'] as $videoFile) {
-                echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">' . "\n";
+                echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">';
             }
-            echo '</video>' . "\n";
-            echo '<div class="work-info">' . $work[1][$languageCode]['posterDescription'] . '</div>' . "\n";
+            echo '</video>';
+
+            echo '<div class="work-info">' . $work[1][$languageCode]['posterDescription'] . '</div>';
             echo '<div class="work-name ' . ($i % 2 == 0 ? 'text-left' : 'text-right') . '">' .
-                $work[1][$languageCode]['navbarTitle'] . '</div>' . "\n";
-            echo '</a>' . "\n\n";
+                $work[1][$languageCode]['navbarTitle'] . '</div>';
+            echo '</a>';
             $i += 1;
         }
         ?>

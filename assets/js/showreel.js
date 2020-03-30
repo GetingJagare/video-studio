@@ -1,23 +1,10 @@
 "use strict";
 
 window.addEventListener('DOMContentLoaded', function (event) {
+    const showreelElement = document.body.querySelector('.showreel');
 
-});
-
-$(document).ready(function () {
-    let scrollTop = 0;
     let cancelShowreelAnimations = false;
-    let cancelScroll = false;
-
-
-    window.addEventListener('scroll', function (event) {
-
-        if (cancelScroll) {
-
-            event.preventDefault();
-        }
-
-    });
+    let showreelScrollCounter = 0;
 
     function startShowreelAnimations() {
         setTimeout(function () {
@@ -47,37 +34,40 @@ $(document).ready(function () {
 
 
     function scrollHelper(e) {
-        cancelScroll = true;
+        cancelShowreelAnimations = true;
 
-        let oldScrollTop = scrollTop;
-        scrollTop = $(this).scrollTop();
+        showreelElement.style.setProperty('--height', 0);
 
-        if (e === null || scrollTop - oldScrollTop > 0) {
-            $(window).unbind("scroll");
-            cancelShowreelAnimations = true;
-            $("html, body").animate({scrollTop: $(".under-showreel").offset().top}, 1500, "swing", function() {
-                $(".showreel").hide();
+        setTimeout(function () {
+            $(showreelElement).hide();
 
-                cancelScroll = false;
+            document.body.classList.remove('showreel-scrolling');
 
-                window.scrollTo(0, 10)
-            });
+        }, 1500);
 
-            setTimeout(function() {
-                $(".syndicate-logo").fadeOut();
-                $(".syndicate-logline").fadeOut();
-                $(".chevron").fadeOut();
-            }, 500);
-        }
+        setTimeout(function() {
+            $(".syndicate-logo").fadeOut();
+            $(".syndicate-logline").fadeOut();
+            $(".chevron").fadeOut();
+        }, 500);
     }
 
+    window.addEventListener('scroll', function (event) {
 
-    $("html, body").scrollTop(0);
+        if (!showreelScrollCounter) {
+
+            showreelScrollCounter ++;
+
+            document.body.classList.add('showreel-scrolling');
+
+            scrollHelper.apply(this, event);
+        }
+
+    });
 
     $(".chevron").click(function () {
         scrollHelper(null);
     });
 
-    $(window).scroll(scrollHelper);
     startShowreelAnimations();
 });

@@ -66,13 +66,21 @@
     }
 
     .work-title {
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-        font-size: 2rem;
+        margin: 1rem 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    .work .work-title_sub {
+        text-align: left;
+        font-size: 1.4rem;
+        line-height: 1.3;
     }
 
     .work-description {
         margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        text-transform: none;
+        font-weight: normal;
     }
 
     .navbar-toggler {
@@ -164,8 +172,7 @@
     }
 
     .navbar .navbar-text {
-        margin-left: 0!important;
-        margin-right: 0!important;
+        display: none;
     }
 
     .syndicate-logline {
@@ -175,5 +182,9 @@
 
     .marquee__logo {
         max-height: 90px;
+    }
+
+    .work .work-title {
+        display: block;
     }
 }

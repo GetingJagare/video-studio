@@ -1,7 +1,9 @@
 .showreel {
+    --height: 100vh;
     position: relative;
-    height: 100vh;
+    height: var(--height);
     overflow: hidden;
+    transition: all 1.5s ease-in-out;
 }
 
 .showreel video {

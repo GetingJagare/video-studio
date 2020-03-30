@@ -132,12 +132,11 @@ p.copyright {
 }
 
 .work-description {
-    margin-left: 9rem;
+    margin: 0 9rem 6rem;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.2rem;
-    margin-bottom: 6rem;
 }
 
 .work-hashtag-link {
@@ -226,4 +225,27 @@ p.copyright {
 .black-back.show {
     opacity: 1;
     visibility: visible;
+}
+
+.work__video {
+    width: 100%;
+}
+
+.work .work-title {
+    display: none;
+}
+
+.work .work-title_sub {
+    display: block;
+    text-align: center;
+}
+
+.showreel-scrolling {
+    position: fixed;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.navbar {
+    margin-top: 0!important;
 }

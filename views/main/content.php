@@ -11,7 +11,7 @@ $worksToShow = 9;
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <?php
             foreach (Application::$app->config['showreel'][$languageCode]['videoFiles'] as $videoFile) {
-                echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">' . "\n";
+                echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">';
             }
             ?>
         </video>
@@ -30,17 +30,22 @@ $worksToShow = 9;
 
             <?php
             for ($i = 0; $i < $worksToShow; $i++) {
-                echo '<a href="' . Application::$app->config['works'][$i][1][$languageCode]['url'] . '">' . "\n";
-                echo '<video id="playerwork-' . ($i + 1) . '-player" poster="' . Application::$app->config['works'][$i][1][$languageCode]['posterImage'] . '">' . "\n";
+
+                echo '<a href="' . Application::$app->config['works'][$i][1][$languageCode]['url'] . '" class="work">';
+
+                echo '<video id="playerwork-' . ($i + 1) . '-player" ' .
+                    'poster="' . Application::$app->config['works'][$i][1][$languageCode]['posterImage'] .
+                    '" class="work__video" muted loop>';
                 foreach (Application::$app->config['works'][$i][1][$languageCode]['videoFiles'] as $videoFile) {
-                    echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">' . "\n";
+                    echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">';
                 }
-                echo '</video>' . "\n";
+                echo '</video>';
                 echo '<div class="work-info">' .
-                    Application::$app->config['works'][$i][1][$languageCode]['posterDescription'] . '</div>';
+                    Application::$app->config['works'][$i][1][$languageCode]['posterDescription'] .
+                    '</div>';
                 echo '<div class="work-name ' . ($i % 2 == 0 ? 'text-left' : 'text-right') . '">' .
                     Application::$app->config['works'][$i][1][$languageCode]['navbarTitle'] . '</div>';
-                echo '</a>' . "\n\n";
+                echo '</a>';
             }
             ?>
 

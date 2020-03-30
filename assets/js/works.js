@@ -1,43 +1,60 @@
 "use strict";
 
-$(document).ready(function() {
+window.addEventListener('DOMContentLoaded', function () {
 
-    $(".works > a > video").each(function (i, el) {
-        $(el).parent().data("player", new Plyr(`#${el.id}`, {
-            blankVideo: "/img/plyr-3.5.10/blank.mp4",
-            iconUrl: "/img/plyr-3.5.10/plyr.svg",
-            autoplay: false,
-            controls: [],
-            muted: true,
-            loop: {active: true},
-            clickToPlay: false,
-            keyboard: {focused: false, global: false}
-        }));
-    });
+    const workSelector = '.works .work';
+    const works = document.querySelectorAll(workSelector);
 
-    $(".works > a").mouseenter(function (e) {
-        $(e.currentTarget).data("worksInfoTimeout", setTimeout(() => {
-            $(e.currentTarget).find(".work-info").fadeIn(1000);
-        }, 2000));
+    works.forEach(function (work) {
 
-        $(".works > a").each(function(i, el) {
-            if (el !== e.currentTarget) {
-                $(el).css({filter: "grayscale(100%)"});
-            }
-            $(el).data("player").pause();
+        work.addEventListener('mouseenter', function (event) {
+
+            const currentTarget = event.currentTarget;
+            const target = currentTarget.closest('.work');
+
+            setTimeout(function () {
+
+                $(target).find('.work-info').fadeIn(1000);
+
+            }, 2000);
+
+            works.forEach(function (otherWork) {
+
+               if (otherWork != target) {
+                   otherWork.style.filter = 'grayscale(100%)';
+
+                   otherWork.querySelector('.work__video').pause();
+               }
+
+            });
+
+            target.querySelector('.work__video').play();
+
+            event.stopPropagation();
+
         });
-        $(e.currentTarget).data("player").play();
-    });
 
-    $(".works > a").mouseleave(function (e) {
-        clearTimeout($(e.currentTarget).data("worksInfoTimeout"));
+        work.addEventListener('mouseleave', function (event) {
 
-        $(e.currentTarget).find(".work-info").fadeOut(500);
+            const currentTarget = event.currentTarget;
+            const target = currentTarget.closest('.work');
 
-        $(".works > a").each(function(i, el) {
-            $(el).css({filter: "grayscale(0)"});
-            $(el).data("player").pause();
+            $(target).find('.work-info').fadeOut(500);
+
+            works.forEach(function (otherWork) {
+
+                if (otherWork != target) {
+                    otherWork.style.filter = 'grayscale(0)';
+                }
+
+            });
+
+            target.querySelector('.work__video').pause();
+
+            event.stopPropagation();
+
         });
+
     });
 
 });
