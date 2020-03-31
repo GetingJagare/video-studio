@@ -8,7 +8,7 @@ $worksToShow = 9;
 <div>
 
     <div class="showreel">
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" preload="metadata">
             <?php
             foreach (Application::$app->config['showreel'][$languageCode]['videoFiles'] as $videoFile) {
                 echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">';

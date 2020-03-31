@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             target.querySelector('.work__video').play();
 
-            event.stopPropagation();
+            event.stopImmediatePropagation();
 
         });
 
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             target.querySelector('.work__video').pause();
 
-            event.stopPropagation();
+            event.stopImmediatePropagation();
 
         });
 

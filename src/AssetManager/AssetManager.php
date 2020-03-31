@@ -11,6 +11,8 @@ class AssetManager
     /** @var string */
     public $route;
 
+    const VERSION = '1.1';
+
     const VENDOR_ASSETS = [
         'css' => [
             '/assets/css/bootstrap-4.4.1/bootstrap.min.css',
@@ -109,13 +111,13 @@ class AssetManager
 
         foreach ($cssAssets as $cssAsset) {
 
-            $this->css .= "<link rel=\"stylesheet\" href=\"$cssAsset\" />";
+            $this->css .= "<link rel=\"stylesheet\" href=\"$cssAsset?v" . self::VERSION . "\" />";
 
         }
 
         foreach ($jsAssets as $jsAsset) {
 
-            $this->js .= "<script src=\"$jsAsset\"></script>";
+            $this->js .= "<script src=\"$jsAsset?v" . self::VERSION . "\"></script>";
 
         }
 
