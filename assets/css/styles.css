@@ -245,6 +245,7 @@ p.copyright {
     position: fixed;
     height: 100vh;
     overflow-y: scroll;
+    top: 0;
 }
 
 .navbar {

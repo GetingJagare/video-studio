@@ -53,7 +53,8 @@
         margin-top: 10%;
     }
 
-    .works > a > .work-name {
+    .works > a > .work-name,
+    .portfolio .works > .work > .work-name {
         font-size: 0.9rem;
     }
 
