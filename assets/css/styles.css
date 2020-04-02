@@ -252,14 +252,23 @@ p.copyright {
     margin-top: 0!important;
 }
 
-.portfolio .works > .work > .work-name {
+.navbar .navbar-text {
+    flex-grow: 1;
+    margin-left: 20rem !important;
+}
+
+.works > .work > .work-name {
     font-size: 1.1rem;
 }
 
-.portfolio .works > .work > .work-name_even {
+.portfolio .works > .work > .work-name {
+    font-style: italic;
+}
+
+.works > .work > .work-name_even {
     text-align: left;
 }
 
-.portfolio .works > .work > .work-name_odd {
+.works > .work > .work-name_odd {
     text-align: right;
 }
