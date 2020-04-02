@@ -137,6 +137,7 @@ p.copyright {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .work-hashtag-link {
@@ -248,4 +249,16 @@ p.copyright {
 
 .navbar {
     margin-top: 0!important;
+}
+
+.portfolio .works > .work > .work-name {
+    font-size: 1.1rem;
+}
+
+.portfolio .works > .work > .work-name_even {
+    text-align: left;
+}
+
+.portfolio .works > .work > .work-name_odd {
+    text-align: right;
 }

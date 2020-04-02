@@ -12,16 +12,10 @@ window.addEventListener('DOMContentLoaded', function () {
             const currentTarget = event.currentTarget;
             const target = currentTarget.closest('.work');
 
-            setTimeout(function () {
-
-                $(target).find('.work-info').fadeIn(1000);
-
-            }, 2000);
-
             works.forEach(function (otherWork) {
 
                if (otherWork != target) {
-                   otherWork.style.filter = 'grayscale(100%)';
+                   otherWork.classList.add('non-active');
 
                    otherWork.querySelector('.work__video').pause();
                }
@@ -39,12 +33,10 @@ window.addEventListener('DOMContentLoaded', function () {
             const currentTarget = event.currentTarget;
             const target = currentTarget.closest('.work');
 
-            $(target).find('.work-info').fadeOut(500);
-
             works.forEach(function (otherWork) {
 
                 if (otherWork != target) {
-                    otherWork.style.filter = 'grayscale(0)';
+                    otherWork.classList.remove('non-active');
                 }
 
             });

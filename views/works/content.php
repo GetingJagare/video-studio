@@ -4,7 +4,7 @@ $languageCode = Application::$app->config['language']['code'];
 
 ?>
 
-<div>
+<div class="portfolio">
 
     <?php echo $header; ?>
 
@@ -23,7 +23,7 @@ $languageCode = Application::$app->config['language']['code'];
             echo '</video>';
 
             echo '<div class="work-info">' . $work[1][$languageCode]['posterDescription'] . '</div>';
-            echo '<div class="work-name ' . ($i % 2 == 0 ? 'text-left' : 'text-right') . '">' .
+            echo '<div class="work-name work-name_' . ($i % 2 == 0 ? 'even' : 'odd') . '">' .
                 $work[1][$languageCode]['navbarTitle'] . '</div>';
             echo '</a>';
             $i += 1;

@@ -57,11 +57,11 @@
         font-size: 0.9rem;
     }
 
-    .works > a:nth-child(odd) > .work-name {
+    .works > a > .work-name_even {
         text-align: left;
     }
 
-    .works > a:nth-child(even) > .work-name {
+    .works > a > .work-name_odd {
         text-align: right;
     }
 
@@ -81,6 +81,7 @@
         margin-right: 2.5rem;
         text-transform: none;
         font-weight: normal;
+        text-align: left;
     }
 
     .navbar-toggler {

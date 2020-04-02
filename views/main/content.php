@@ -5,7 +5,7 @@ $worksToShow = 9;
 
 ?>
 
-<div>
+<div class="main">
 
     <div class="showreel">
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" preload="metadata">
@@ -43,7 +43,7 @@ $worksToShow = 9;
                 echo '<div class="work-info">' .
                     Application::$app->config['works'][$i][1][$languageCode]['posterDescription'] .
                     '</div>';
-                echo '<div class="work-name ' . ($i % 2 == 0 ? 'text-left' : 'text-right') . '">' .
+                echo '<div class="work-name work-name_' . ($i % 2 == 0 ? 'even' : 'odd') . '">' .
                     Application::$app->config['works'][$i][1][$languageCode]['navbarTitle'] . '</div>';
                 echo '</a>';
             }

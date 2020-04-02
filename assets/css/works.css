@@ -5,11 +5,6 @@
     transition: all 100ms linear;
 }
 
-.works > a:hover {
-    z-index: 99999;
-    font-style: italic;
-}
-
 .works > a:nth-child(n+2) {
     margin-top: -5%;
 }
@@ -33,10 +28,38 @@
     font-style: normal;
     font-weight: bold;
     line-height: 100%;
-    display: none;
     padding: 0 0.5rem;
     width: 100%;
     text-align: center;
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-property: opacity, visibility;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.works > a.non-active {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.works > a:hover {
+    z-index: 99999;
+    font-style: italic;
+}
+
+.works > a:hover > .work-info {
+    transition-duration: 1s;
+    transition-delay: 2s;
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -o-transition-delay: 2s;
+    opacity: 1;
+    visibility: visible;
 }
 
 .works > a > .work-name {
@@ -45,4 +68,5 @@
     text-transform: uppercase;
     font-weight: bold;
     width: 100%;
+    text-align: center;
 }
