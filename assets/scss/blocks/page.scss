@@ -1,0 +1,22 @@
+.page {
+
+  &-title {
+    margin: 3rem 0 3rem 18rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-size: 2.5rem;
+  }
+
+  @media ($mob) {
+
+    &-title {
+      margin: 3rem 2.5rem 3rem 0;
+      text-align: right;
+      font-size: 2rem;
+    }
+
+  }
+
+}

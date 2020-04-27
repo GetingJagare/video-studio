@@ -9,7 +9,7 @@
 
 </head>
 
-<body>
+<body class="body">
     <div class="black-back"></div>
 
     <?php echo $content; ?>

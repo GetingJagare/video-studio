@@ -10,7 +10,7 @@ $work = $works[$workId - 1];
 
 <?php echo $header; ?>
 
-    <div class="work">
+    <div class="work single">
 
         <?php $videoFile = $work[1][$languageCode]['videoFiles'][0]; ?>
 

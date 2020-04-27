@@ -1,0 +1,23 @@
+.about {
+
+  &__col {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 1rem 6rem 9rem;
+
+    @media ($mob) {
+      p {
+        line-height: 1.1;
+        font-size: 1rem;
+      }
+
+      &:nth-child(1), &:nth-child(2) {
+        margin: 0 1.5rem;
+        padding: 0;
+        //width: 100%;
+        flex-basis: auto;
+      }
+    }
+  }
+
+}

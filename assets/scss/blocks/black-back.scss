@@ -1,0 +1,17 @@
+.black-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  background-color: black;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}

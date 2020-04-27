@@ -1,11 +1,11 @@
-#marquee {
+.marquee {
     overflow: hidden;
 }
 
-#marquee > div {
+.marquee__wrapper {
     white-space: nowrap;
 }
 
-#marquee > div > * {
+.marquee__wrapper > * {
     display: inline-block;
 }

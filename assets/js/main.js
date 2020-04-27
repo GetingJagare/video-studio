@@ -1,3 +1,5 @@
+import "../scss/main.scss";
+
 window.addEventListener('DOMContentLoaded', function () {
 
     let clickCounter = 0;

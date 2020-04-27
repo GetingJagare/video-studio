@@ -1,0 +1,25 @@
+.nav {
+  &-item {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-style: italic;
+  }
+
+  &-link {
+    color: white;
+    padding: 0.5rem;
+    font-style: normal;
+
+    &:hover {
+      color: white;
+      font-style: italic;
+    }
+  }
+
+  &-language-switcher {
+    font-weight: normal;
+    font-style: normal;
+  }
+}

@@ -1,0 +1,19 @@
+@import "common/breakpoints";
+
+.marquee {
+  overflow: hidden;
+
+  &__wrapper {
+    white-space: nowrap;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  @media ($mob) {
+    &__logo {
+      max-height: 90px;
+    }
+  }
+}

@@ -11,82 +11,63 @@ class AssetManager
     /** @var string */
     public $route;
 
-    const VERSION = '1.3';
+    const VERSION = '1.4';
 
     const VENDOR_ASSETS = [
         'css' => [
-            '/assets/css/bootstrap-4.4.1/bootstrap.min.css',
+            '/dist/bundle/main.css'
         ],
         'js' => [
-            '/assets/js/jquery-3.4.1/jquery-3.4.1.min.js',
-            '/assets/js/bootstrap-4.4.1/bootstrap.bundle.min.js',
-            '/assets/js/main.js',
+            '/dist/bundle/main.js',
         ]
     ];
 
     const ASSETS_DATA = [
             'main' => [
                 'css' => [
-                    /*'/assets/css/plyr-3.5.10/plyr.css',*/
-                    '/assets/css/styles.css',
-                    '/assets/css/showreel.css',
-                    '/assets/css/works.css',
+                    '/dist/bundle/showreel.css',
+                    '/dist/bundle/works.css',
                 ],
                 'js' => [
-                    /*'/assets/js/plyr-3.5.10/plyr.min.js',*/
-                    '/assets/js/showreel.js',
-                    '/assets/js/works.js'
+                    '/dist/bundle/showreel.js',
+                    '/dist/bundle/works.js'
                 ]
             ],
             'works' => [
                 'css' => [
-                    /*'/assets/css/plyr-3.5.10/plyr.css',*/
-                    '/assets/css/styles.css',
-                    '/assets/css/works.css',
+                    '/dist/bundle/works.css',
                 ],
                 'js' => [
-                    /*'/assets/js/plyr-3.5.10/plyr.min.js',*/
-                    '/assets/js/works.js'
+                    '/dist/bundle/works.js'
                 ]
             ],
             'about' => [
                 'css' => [
-                    '/assets/css/styles.css',
-                    '/assets/css/marquee.css'
+                    '/dist/bundle/marquee.css'
                 ],
                 'js' => [
-                    '/assets/js/marquee.js'
+                    '/dist/bundle/marquee.js'
                 ]
             ],
             'contacts' => [
-                'js' => [
-                    '/assets/js/marquee.js'
-                ],
                 'css' => [
-                    '/assets/css/styles.css',
-                    '/assets/css/marquee.css'
-                ]
+                    '/dist/bundle/marquee.css'
+                ],
+                'js' => [
+                    '/dist/bundle/marquee.js'
+                ],
             ],
             'work' => [
-                'js' => [
-                    /*'/assets/js/plyr-3.5.10/plyr.min.js',*/
-                    '/assets/js/work.js',
-                    '/assets/js/marquee.js'
-                ],
                 'css' => [
-                    /*'/assets/css/plyr-3.5.10/plyr.css',*/
-                    '/assets/css/styles.css',
-                    '/assets/css/marquee.css'
-                ]
+                    '/dist/bundle/marquee.css',
+                    '/dist/bundle/works.css',
+                ],
+                'js' => [
+                    '/dist/bundle/work.js',
+                    '/dist/bundle/marquee.js'
+                ],
             ]
         ];
-
-    const MOBILE_ASSETS = [
-        'css' => [
-            '/assets/css/mobile.css',
-        ],
-        'js' => []
-    ];
 
     /** @var string  */
     public $css = "";
@@ -99,14 +80,12 @@ class AssetManager
 
         $cssAssets = array_merge(
             self::VENDOR_ASSETS['css'],
-            isset(self::ASSETS_DATA[$this->route]['css']) ? self::ASSETS_DATA[$this->route]['css'] : [],
-            self::MOBILE_ASSETS['css']
+            isset(self::ASSETS_DATA[$this->route]['css']) ? self::ASSETS_DATA[$this->route]['css'] : []
         );
 
         $jsAssets = array_merge(
             self::VENDOR_ASSETS['js'],
-            isset(self::ASSETS_DATA[$this->route]['js']) ? self::ASSETS_DATA[$this->route]['js'] : [],
-            self::MOBILE_ASSETS['js']
+            isset(self::ASSETS_DATA[$this->route]['js']) ? self::ASSETS_DATA[$this->route]['js'] : []
         );
 
         foreach ($cssAssets as $cssAsset) {

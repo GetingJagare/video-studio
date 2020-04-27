@@ -1,29 +1,40 @@
 "use strict";
 
-$(document).ready(function() {
+import "../scss/marquee.scss";
+
+window.addEventListener('DOMContentLoaded', function () {
 
     const marqueeMinWidth = 10000;
-    let marquee = $("#marquee");
+    let marquee = document.getElementById('marquee');
     let marqueeItems = [];
     let marqueeWidth = 0;
     let marqueeAnimationTime;
 
-    if (marquee.length !== 0) {
-        marquee.children().each(function(i, el) {
-            marqueeWidth += $(el).width();
-            marqueeItems.push($(el).clone().wrap("<div><div></div></div>").parent().parent().html());
-        });
+    if (marquee) {
+
+        for (let i = 0; i < marquee.children.length; i++) {
+
+            const child = marquee.children[i];
+
+            marqueeWidth += child.offsetWidth;
+
+            marqueeItems.push('<div class="marquee__item"><div>' + child.outerHTML + '</div></div>');
+
+        }
 
         marqueeAnimationTime = Math.ceil(marqueeWidth / 150);
 
-        marquee = marquee.empty().append("<div></div>").find("div");
+        marquee.innerHTML = '<div></div>';
+        marquee = marquee.firstElementChild;
+        marquee.classList.add('marquee__wrapper');
 
         for (let i = 0; i < Math.ceil(marqueeMinWidth / marqueeWidth); i += 1) {
-            marquee.append(marqueeItems);
+            marquee.innerHTML += marqueeItems.join('');
         }
 
-        $("head").append(`<style>
-#marquee > div {
+        const styleElement = document.createElement('style');
+
+        styleElement.textContent = `.marquee__wrapper {
   -webkit-animation: marquee-move ${marqueeAnimationTime}s linear infinite;
   -moz-animation:    marquee-move ${marqueeAnimationTime}s linear infinite;
   -ms-animation:     marquee-move ${marqueeAnimationTime}s linear infinite;
@@ -35,7 +46,9 @@ $(document).ready(function() {
 @-moz-keyframes    "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWidth}px;}}
 @-webkit-keyframes "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWidth}px;}}
 @-ms-keyframes     "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWidth}px;}}
-@-o-keyframes      "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWidth}px;}}
-</style>`);
+@-o-keyframes      "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWidth}px;}}`;
+
+        document.head.appendChild(styleElement);
     }
+
 });

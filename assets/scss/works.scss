@@ -1,0 +1,22 @@
+@import "common/breakpoints";
+@import "blocks/work";
+
+.works {
+  .work-name {
+    font-size: 1.1rem;
+  }
+
+  .work-name_even {
+    text-align: left;
+  }
+
+  .work-name_odd {
+    text-align: right;
+  }
+}
+
+.portfolio {
+  .work-name {
+    font-style: italic;
+  }
+}

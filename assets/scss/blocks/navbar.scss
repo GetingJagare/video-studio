@@ -1,0 +1,132 @@
+.navbar {
+  z-index: 1000;
+  margin-top: 0!important;
+
+  &-brand {
+    margin-top: .2rem;
+
+    &, &:hover {
+      color: white;
+    }
+
+    & > img {
+      height: 0.81rem;
+    }
+  }
+
+  &-flex-1-section {
+    flex: 1 !important;
+  }
+
+  &-text {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-style: italic;
+    flex-grow: 1;
+    margin-left: 20.5rem !important;
+  }
+
+  @media screen and ($tab) {
+    &-text {
+      margin-left: 2rem!important;
+    }
+  }
+
+  @media ($mob) {
+    &-toggler {
+      height: 1.2rem;
+      width: 2rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &:focus {
+        outline: none;
+      }
+
+      &.is-active + .navbar-collapse.collapse {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &.is-active .navbar-toggler__line {
+        opacity: 0;
+      }
+
+      &.is-active {
+        &:before {
+          transform: rotate(45deg);
+          top: 0.6rem;
+        }
+
+        &:after {
+          transform: rotate(-45deg);
+          bottom: 0;
+          top: 0.6rem;
+        }
+      }
+
+      &__line, &:before, &:after {
+        width: 100%;
+        height: 0.12rem;
+        background-color: white;
+        left: 0;
+      }
+
+      &__line {
+        position: relative;
+        transition: all 0.4s ease-in-out;
+        opacity: 1;
+      }
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        transition: all 0.4s ease-in-out;
+        transform-origin: center;
+      }
+
+      &:before {
+        top: 0;
+      }
+      &:after {
+        bottom: 0;
+      }
+    }
+
+    &-collapse {
+      &.collapse {
+        transition: all 0.4s linear;
+        opacity: 0;
+        visibility: hidden;
+        display: block;
+      }
+
+      .nav-link {
+        margin-right: 2rem!important;
+        font-size: 1.2rem;
+      }
+
+      &.collapsible-item {
+        position: absolute;
+        top: 49px;
+        height: 100vh;
+        width: calc(100% + 1rem);
+        left: -0.5rem;
+        z-index: 1000;
+      }
+    }
+
+    &-brand {
+      & > img {
+        height: 1.2rem;
+      }
+    }
+
+    &-text {
+      display: none;
+    }
+  }
+}

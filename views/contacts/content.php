@@ -14,7 +14,9 @@ $languageCode = Application::$app->config['language']['code'];
         <?php
         echo Application::$app->config['contacts'][$languageCode]['realWorld'];
         foreach (Application::$app->config['contacts'][$languageCode]['socialLinks'] as $socialLink) {
-            echo '<a href="' . $socialLink['url'] . '"><img src="' . $socialLink['icon'] . '" alt="' . $socialLink['altText'] . '"></a>' . "\n";
+            echo "<a href=\"" . $socialLink['url'] . "\" class=\"contacts__link\">" .
+            "<img src=\"" . $socialLink['icon'] . "\" alt=\"" . $socialLink['altText'] . "\" class=\"contacts__link-image\">" .
+            "</a>";
         }
         ?>
     </div>

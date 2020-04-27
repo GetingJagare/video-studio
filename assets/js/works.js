@@ -1,5 +1,7 @@
 "use strict";
 
+import '../scss/works.scss';
+
 window.addEventListener('DOMContentLoaded', function () {
 
     const workSelector = '.works .work';

@@ -23,7 +23,7 @@
     top: 50%;
     width: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    visibility: hidden;
 }
 
 .syndicate-logline {
@@ -37,7 +37,7 @@
     font-weight: bold;
     line-height: 100%;
     white-space: nowrap;
-    display: none;
+    visibility: hidden;
 }
 
 .chevron {
@@ -51,5 +51,5 @@
     transform: rotate(135deg);
     left: 50%;
     bottom: 7%;
-    display: none;
+    visibility: hidden;
 }
