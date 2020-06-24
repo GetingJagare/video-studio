@@ -1,6 +1,7 @@
 <?php
 
-function findWorkByUrl($work) {
+function findWorkByUrl($work)
+{
     return preg_match($work[0], $_SERVER['REQUEST_URI']);
 }
 
@@ -24,20 +25,26 @@ return [
                 ['tag' => 'hashtag #1-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/1',
-            'title' => 'Лорем1 ипсум долор сит амет, консектетур адипи-',
-            'pageTitle' => 'Работа №1',
-            'navbarTitle' => 'Работа №1',
-            'description' => 'Лорем1 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе эт долоре манья аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон улламко лаборис низи ут аликуип экс эа коммодо',
-            'posterDescription' => 'Лорем1 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе',
+            'title' => '',
+            'pageTitle' => 'Яндекс.Такси',
+            'navbarTitle' => 'Яндекс.Такси',
+            'description' => 'Интеграция Яндекс.Такси в шапку программы Утро Пятницы на Пятнице.<br> Спонсор программы ООО «Яндекс.Такси». <br>Производство ООО «Студия Синдикат» по заказу «Газпромбанк» (акционерное общество) для ООО «Телекомпания Пятница» ©',
+            'posterDescription' => 'Интеграция Яндекс.Такси в шапку программы Утро Пятницы на Пятнице.<br> Спонсор программы ООО «Яндекс.Такси». <br>Производство ООО «Студия Синдикат» по заказу «Газпромбанк» (акционерное общество) для ООО «Телекомпания Пятница» ©',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work1.mp4', 'type' => 'video/mp4']],
             'posterImage' => '/assets/img/teasers/work1.jpg',
             'hashTags' => [
-                ['tag' => 'хештег №1-1', 'url' => '#'],
-                ['tag' => 'хештег №1-2', 'url' => '#'],
-                ['tag' => 'хештег №1-3', 'url' => '#'],
-                ['tag' => 'хештег №1-4', 'url' => '#'],
-                ['tag' => 'хештег №1-5', 'url' => '#']]]]],
+                ['tag' => 'Реклама', 'url' => '#'],
+                ['tag' => 'Интеграция', 'url' => '#'],
+                ['tag' => 'Утро', 'url' => '#'],
+                ['tag' => 'Пятница', 'url' => '#'],
+                ['tag' => 'Яндекс.Такси', 'url' => '#'],
+                ['tag' => 'Мы Успеем', 'url' => '#'],
+                ['tag' => 'Просыпайтесь', 'url' => '#'],
+                ['tag' => 'Маша Ивакова', 'url' => '#'],
+                ['tag' => 'Маривалери', 'url' => '#'],
+                ['tag' => 'Лера Дергилёва', 'url' => '#'],
+            ]]]],
 
     ['/^\/works\/2\/.*$/', [
         'en' => [
@@ -58,20 +65,26 @@ return [
                 ['tag' => 'hashtag #2-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/2',
-            'title' => 'Лорем2 ипсум долор сит амет, консектетур адипи-',
-            'pageTitle' => 'Работа №2',
-            'navbarTitle' => 'Работа №2',
-            'description' => 'Лорем2 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе эт долоре манья аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон улламко лаборис низи ут аликуип экс эа коммодо',
-            'posterDescription' => 'Лорем2 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе',
+            'title' => '',
+            'pageTitle' => 'Газпромбанк',
+            'navbarTitle' => 'Газпромбанк',
+            'description' => 'Заставка Газпромбанк к программе Регина +1 на Пятнице. <br>Спонсор программы «Газпромбанк» (акционерное общество). <br>Производство ООО «Студия Синдикат» по заказу ООО «Яндекс.Такси» для ООО «Телекомпания Пятница» ©',
+            'posterDescription' => 'Заставка Газпромбанк к программе Регина +1 на Пятнице. <br>Спонсор программы «Газпромбанк» (акционерное общество). <br>Производство ООО «Студия Синдикат» по заказу ООО «Яндекс.Такси» для ООО «Телекомпания Пятница» ©',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work2.mp4', 'type' => 'video/mp4']],
             'posterImage' => '/assets/img/teasers/work2.jpg',
             'hashTags' => [
-                ['tag' => 'хештег №2-1', 'url' => '#'],
-                ['tag' => 'хештег №2-2', 'url' => '#'],
-                ['tag' => 'хештег №2-3', 'url' => '#'],
-                ['tag' => 'хештег №2-4', 'url' => '#'],
-                ['tag' => 'хештег №2-5', 'url' => '#']]]]],
+                ['tag' => 'Реклама', 'url' => '#'],
+                ['tag' => 'Заставка', 'url' => '#'],
+                ['tag' => 'Регина+1', 'url' => '#'],
+                ['tag' => 'Пятница', 'url' => '#'],
+                ['tag' => 'Газпромбанк', 'url' => '#'],
+                ['tag' => 'С заботой о мамах', 'url' => '#'],
+                ['tag' => 'Газпромбанк', 'url' => '#'],
+                ['tag' => 'Газпромбанк', 'url' => '#'],
+                ['tag' => 'Газпромбанк', 'url' => '#'],
+                ['tag' => 'Газпромбанк', 'url' => '#'],
+            ]]]],
 
     ['/^\/works\/3\/.*$/', [
         'en' => [
@@ -92,20 +105,26 @@ return [
                 ['tag' => 'hashtag #3-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/3',
-            'title' => 'Лорем3 ипсум долор сит амет, консектетур адипи-',
-            'pageTitle' => 'Работа №3',
-            'navbarTitle' => 'Работа №3',
-            'description' => 'Лорем3 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе эт долоре манья аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон улламко лаборис низи ут аликуип экс эа коммодо',
-            'posterDescription' => 'Лорем3 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе',
+            'title' => '',
+            'pageTitle' => 'TIC TAC',
+            'navbarTitle' => 'TIC TAC',
+            'description' => 'Заставка TIC TAC к программе Орёл и Решка на Пятнице. <br>Спонсор программы ЗАО «Ферреро Руссия». <br>Производство ООО «Студия Синдикат» по заказу ЗАО «Ферреро Руссия» для ООО «Телекомпания Пятница»©',
+            'posterDescription' => 'Заставка TIC TAC к программе Орёл и Решка на Пятнице. <br>Спонсор программы ЗАО «Ферреро Руссия». <br>Производство ООО «Студия Синдикат» по заказу ЗАО «Ферреро Руссия» для ООО «Телекомпания Пятница»©',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work3.mp4', 'type' => 'video/mp4']],
             'posterImage' => '/assets/img/teasers/work3.jpg',
             'hashTags' => [
-                ['tag' => 'хештег №3-1', 'url' => '#'],
-                ['tag' => 'хештег №3-2', 'url' => '#'],
-                ['tag' => 'хештег №3-3', 'url' => '#'],
-                ['tag' => 'хештег №3-4', 'url' => '#'],
-                ['tag' => 'хештег №3-5', 'url' => '#']]]]],
+                ['tag' => 'Реклама', 'url' => '#'],
+                ['tag' => 'Заставка', 'url' => '#'],
+                ['tag' => 'ОрёлРешка', 'url' => '#'],
+                ['tag' => 'Индия', 'url' => '#'],
+                ['tag' => 'Девадаси', 'url' => '#'],
+                ['tag' => 'Новая встреча', 'url' => '#'],
+                ['tag' => 'Пятница', 'url' => '#'],
+                ['tag' => 'TIC TAC', 'url' => '#'],
+                ['tag' => 'Освежи настроение', 'url' => '#'],
+                ['tag' => 'Коля Серга', 'url' => '#'],
+            ]]]],
 
     ['/^\/works\/4\/.*$/', [
         'en' => [
@@ -126,126 +145,30 @@ return [
                 ['tag' => 'hashtag #4-5', 'url' => '#']]],
         'ru' => [
             'url' => '/works/4',
-            'title' => 'Лорем4 ипсум долор сит амет, консектетур адипи-',
-            'pageTitle' => 'Работа №4',
-            'navbarTitle' => 'Работа №4',
-            'description' => 'Лорем4 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе эт долоре манья аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон улламко лаборис низи ут аликуип экс эа коммодо',
-            'posterDescription' => 'Лорем4 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе',
+            'title' => '',
+            'pageTitle' => 'Purina Pro Plan',
+            'navbarTitle' => 'Purina Pro Plan',
+            'description' => 'Серия заставок Purina Pro Plan к сериалу Любимцы на Пятнице. <br>Спонсор показа ООО «Нестле Россия». <br>Производство ООО «Студия Синдикат» по заказу ООО «Нестле Россия» для ООО «Телекомпания Пятница»©',
+            'posterDescription' => 'Серия заставок Purina Pro Plan к сериалу Любимцы на Пятнице. <br>Спонсор показа ООО «Нестле Россия». <br>Производство ООО «Студия Синдикат» по заказу ООО «Нестле Россия» для ООО «Телекомпания Пятница»©',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work4.mp4', 'type' => 'video/mp4']],
             'posterImage' => '/assets/img/teasers/work4.jpg',
             'hashTags' => [
-                ['tag' => 'хештег №4-1', 'url' => '#'],
-                ['tag' => 'хештег №4-2', 'url' => '#'],
-                ['tag' => 'хештег №4-3', 'url' => '#'],
-                ['tag' => 'хештег №4-4', 'url' => '#'],
-                ['tag' => 'хештег №4-5', 'url' => '#']]]]],
+                ['tag' => 'Реклама', 'url' => '#'],
+                ['tag' => 'Заставка', 'url' => '#'],
+                ['tag' => 'Любимцы', 'url' => '#'],
+                ['tag' => 'Пятница', 'url' => '#'],
+                ['tag' => 'Корм', 'url' => '#'],
+                ['tag' => 'Purina Pro Plan', 'url' => '#'],
+                ['tag' => 'Правильное Питание', 'url' => '#'],
+                ['tag' => 'Здоровое Будущее', 'url' => '#'],
+                ['tag' => 'Михаил Башкатов', 'url' => '#'],
+                ['tag' => 'Антон Лапшин', 'url' => '#'],
+            ]]]],
 
     ['/^\/works\/5\/.*$/', [
         'en' => [
             'url' => '/works/5',
-            'title' => 'Lorem5 ipsum dolor sit amet, consectetur adipi-',
-            'pageTitle' => 'Work #5',
-            'navbarTitle' => 'Work #5',
-            'description' => 'Lorem5 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-            'posterDescription' => 'Lorem5 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-            'videoFiles' => [
-                ['src' => '/assets/img/videos/work5.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work5.jpg',
-            'hashTags' => [
-                ['tag' => 'hashtag #5-1', 'url' => '#'],
-                ['tag' => 'hashtag #5-2', 'url' => '#'],
-                ['tag' => 'hashtag #5-3', 'url' => '#'],
-                ['tag' => 'hashtag #5-4', 'url' => '#'],
-                ['tag' => 'hashtag #5-5', 'url' => '#']]],
-        'ru' => [
-            'url' => '/works/5',
-            'title' => 'Лорем5 ипсум долор сит амет, консектетур адипи-',
-            'pageTitle' => 'Работа №5',
-            'navbarTitle' => 'Работа №5',
-            'description' => 'Лорем5 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе эт долоре манья аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон улламко лаборис низи ут аликуип экс эа коммодо',
-            'posterDescription' => 'Лорем5 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе',
-            'videoFiles' => [
-                ['src' => '/assets/img/videos/work5.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work5.jpg',
-            'hashTags' => [
-                ['tag' => 'хештег №5-1', 'url' => '#'],
-                ['tag' => 'хештег №5-2', 'url' => '#'],
-                ['tag' => 'хештег №5-3', 'url' => '#'],
-                ['tag' => 'хештег №5-4', 'url' => '#'],
-                ['tag' => 'хештег №5-5', 'url' => '#']]]]],
-
-    ['/^\/works\/6\/.*$/', [
-        'en' => [
-            'url' => '/works/6',
-            'title' => 'Lorem6 ipsum dolor sit amet, consectetur adipi-',
-            'pageTitle' => 'Work #6',
-            'navbarTitle' => 'Work #6',
-            'description' => 'Lorem6 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-            'posterDescription' => 'Lorem6 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-            'videoFiles' => [
-                ['src' => '/assets/img/videos/work6.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work6.jpg',
-            'hashTags' => [
-                ['tag' => 'hashtag #6-1', 'url' => '#'],
-                ['tag' => 'hashtag #6-2', 'url' => '#'],
-                ['tag' => 'hashtag #6-3', 'url' => '#'],
-                ['tag' => 'hashtag #6-4', 'url' => '#'],
-                ['tag' => 'hashtag #6-5', 'url' => '#']]],
-        'ru' => [
-            'url' => '/works/6',
-            'title' => 'Лорем6 ипсум долор сит амет, консектетур адипи-',
-            'pageTitle' => 'Работа №6',
-            'navbarTitle' => 'Работа №6',
-            'description' => 'Лорем6 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе эт долоре манья аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон улламко лаборис низи ут аликуип экс эа коммодо',
-            'posterDescription' => 'Лорем6 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе',
-            'videoFiles' => [
-                ['src' => '/assets/img/videos/work6.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work6.jpg',
-            'hashTags' => [
-                ['tag' => 'хештег №6-1', 'url' => '#'],
-                ['tag' => 'хештег №6-2', 'url' => '#'],
-                ['tag' => 'хештег №6-3', 'url' => '#'],
-                ['tag' => 'хештег №6-4', 'url' => '#'],
-                ['tag' => 'хештег №6-5', 'url' => '#']]]]],
-
-    ['/^\/works\/7\/.*$/', [
-        'en' => [
-            'url' => '/works/7',
-            'title' => 'Lorem7 ipsum dolor sit amet, consectetur adipi-',
-            'pageTitle' => 'Work #7',
-            'navbarTitle' => 'Work #7',
-            'description' => 'Lorem7 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-            'posterDescription' => 'Lorem7 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-            'videoFiles' => [
-                ['src' => '/assets/img/videos/work7.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work7.jpg',
-            'hashTags' => [
-                ['tag' => 'hashtag #7-1', 'url' => '#'],
-                ['tag' => 'hashtag #7-2', 'url' => '#'],
-                ['tag' => 'hashtag #7-3', 'url' => '#'],
-                ['tag' => 'hashtag #7-4', 'url' => '#'],
-                ['tag' => 'hashtag #7-5', 'url' => '#']]],
-        'ru' => [
-            'url' => '/works/7',
-            'title' => 'Лорем7 ипсум долор сит амет, консектетур адипи-',
-            'pageTitle' => 'Работа №7',
-            'navbarTitle' => 'Работа №7',
-            'description' => 'Лорем7 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе эт долоре манья аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон улламко лаборис низи ут аликуип экс эа коммодо',
-            'posterDescription' => 'Лорем7 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе',
-            'videoFiles' => [
-                ['src' => '/assets/img/videos/work7.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work7.jpg',
-            'hashTags' => [
-                ['tag' => 'хештег №7-1', 'url' => '#'],
-                ['tag' => 'хештег №7-2', 'url' => '#'],
-                ['tag' => 'хештег №7-3', 'url' => '#'],
-                ['tag' => 'хештег №7-4', 'url' => '#'],
-                ['tag' => 'хештег №7-5', 'url' => '#']]]]],
-
-    ['/^\/works\/8\/.*$/', [
-        'en' => [
-            'url' => '/works/8',
             'title' => 'Lorem8 ipsum dolor sit amet, consectetur adipi-',
             'pageTitle' => 'Work #8',
             'navbarTitle' => 'Work #8',
@@ -261,52 +184,21 @@ return [
                 ['tag' => 'hashtag #8-4', 'url' => '#'],
                 ['tag' => 'hashtag #8-5', 'url' => '#']]],
         'ru' => [
-            'url' => '/works/8',
-            'title' => 'Лорем8 ипсум долор сит амет, консектетур адипи-',
-            'pageTitle' => 'Работа №8',
-            'navbarTitle' => 'Работа №8',
-            'description' => 'Лорем8 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе эт долоре манья аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон улламко лаборис низи ут аликуип экс эа коммодо',
-            'posterDescription' => 'Лорем8 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе',
+            'url' => '/works/5',
+            'title' => '',
+            'pageTitle' => 'Выборы в Мосгордуму',
+            'navbarTitle' => 'Выборы в Мосгордуму',
+            'description' => '8 сентября Выборы в Мосгордуму. <br>Производство ООО «Студия Синдикат»',
+            'posterDescription' => '8 сентября Выборы в Мосгордуму. <br>Производство ООО «Студия Синдикат»',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
             'posterImage' => '/assets/img/teasers/work8.jpg',
             'hashTags' => [
-                ['tag' => 'хештег №8-1', 'url' => '#'],
-                ['tag' => 'хештег №8-2', 'url' => '#'],
-                ['tag' => 'хештег №8-3', 'url' => '#'],
-                ['tag' => 'хештег №8-4', 'url' => '#'],
-                ['tag' => 'хештег №8-5', 'url' => '#']]]]],
-
-    ['/^\/works\/9\/.*$/', [
-        'en' => [
-            'url' => '/works/9',
-            'title' => 'Lorem9 ipsum dolor sit amet, consectetur adipi-',
-            'pageTitle' => 'Work #9',
-            'navbarTitle' => 'Work #9',
-            'description' => 'Lorem9 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-            'posterDescription' => 'Lorem9 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-            'videoFiles' => [
-                ['src' => '/assets/img/videos/work9.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work9.jpg',
-            'hashTags' => [
-                ['tag' => 'hashtag #9-1', 'url' => '#'],
-                ['tag' => 'hashtag #9-2', 'url' => '#'],
-                ['tag' => 'hashtag #9-3', 'url' => '#'],
-                ['tag' => 'hashtag #9-4', 'url' => '#'],
-                ['tag' => 'hashtag #9-5', 'url' => '#']]],
-        'ru' => [
-            'url' => '/works/9',
-            'title' => 'Лорем9 ипсум долор сит амет, консектетур адипи-',
-            'pageTitle' => 'Работа №9',
-            'navbarTitle' => 'Работа №9',
-            'description' => 'Лорем9 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе эт долоре манья аликуа. Ут эним ад миним веньям, куис ноструд эксерчитатьон улламко лаборис низи ут аликуип экс эа коммодо',
-            'posterDescription' => 'Лорем9 ипсум долор сит амет, консектетур адипишинг элит, сед до эюзмод темпор инчидидунт ут лаборе',
-            'videoFiles' => [
-                ['src' => '/assets/img/videos/work9.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work9.jpg',
-            'hashTags' => [
-                ['tag' => 'хештег №9-1', 'url' => '#'],
-                ['tag' => 'хештег №9-2', 'url' => '#'],
-                ['tag' => 'хештег №9-3', 'url' => '#'],
-                ['tag' => 'хештег №9-4', 'url' => '#'],
-                ['tag' => 'хештег №9-5', 'url' => '#']]]]]];
+                ['tag' => 'Москва', 'url' => '#'],
+                ['tag' => 'Участвую в развитии', 'url' => '#'],
+                ['tag' => 'Как похорошела Москва', 'url' => '#'],
+                ['tag' => '8 сентября', 'url' => '#'],
+                ['tag' => 'Выборы', 'url' => '#'],
+                ['tag' => 'Мосгордума', 'url' => '#']
+            ]]]],
+];

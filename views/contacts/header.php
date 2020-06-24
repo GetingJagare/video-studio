@@ -23,10 +23,10 @@ $languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
                                     href="<?php echo Application::$app->config['menu'][$languageCode]['about']['link']; ?>">
                     <?php echo Application::$app->config['menu'][$languageCode]['about']['title']; ?></a>
             </li>
-            <li class="nav-item"><a class="nav-link text-nowrap text-right mx-3 my-2 p-0 nav-language-switcher"
-                                    href="<?php echo $languageSwitcherUrl; ?>">
-                    <?php echo $languageSwitcherLabel; ?></a>
-            </li>
+            <!--<li class="nav-item"><a class="nav-link text-nowrap text-right mx-3 my-2 p-0 nav-language-switcher"
+                                    href="<?php /*echo $languageSwitcherUrl; */?>">
+                    <?php /*echo $languageSwitcherLabel; */?></a>
+            </li>-->
         </ul>
     </div>
 </nav>

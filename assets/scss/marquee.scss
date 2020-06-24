@@ -16,4 +16,19 @@
       max-height: 90px;
     }
   }
+
+  .work-hashtag-link {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    padding: 0.5rem;
+
+    &:hover {
+      text-decoration: none;
+      font-style: italic;
+      color: white;
+    }
+  }
 }

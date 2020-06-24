@@ -5,5 +5,11 @@ $languageCode = Application::$app->config['language']['code'];
 ?>
 
 <footer id="marquee" class="marquee">
-    <span><span class="contacts-motto"><?php echo Application::$app->config['contacts'][$languageCode]['motto']; ?></span></span>
+    <span>
+            <?php
+            foreach (Application::$app->config['contacts'][$languageCode]['motto'] as $tag) {
+                echo '<span><a class="work-hashtag-link" href="#">' . $tag . '</a></span>';
+            }
+            ?>
+        </span>
 </footer>

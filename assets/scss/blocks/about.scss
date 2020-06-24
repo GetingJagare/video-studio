@@ -2,13 +2,16 @@
 
   &__col {
     color: white;
-    font-size: 1.2rem;
     margin: 0 1rem 6rem 9rem;
+
+    p {
+      font-size: 3.6rem;
+    }
 
     @media ($mob) {
       p {
-        line-height: 1.1;
-        font-size: 1rem;
+        line-height: 2;
+        font-size: 2rem;
       }
 
       &:nth-child(1), &:nth-child(2) {
