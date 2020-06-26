@@ -13,7 +13,7 @@ return [
             'link' => '/about']],
     'ru' => [
         'works' => [
-            'title' => 'Портфолио',
+            'title' => 'Кейсы',
             'link' => '/works'],
         'contacts' => [
             'title' => 'Контакты',

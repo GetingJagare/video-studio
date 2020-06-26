@@ -9,7 +9,7 @@ return [
             '/assets/img/clients/nestle.png',
             '/assets/img/clients/pyatnitsa.png']],
     'ru' => [
-        'text1' => '<p>Креативные<br>Классные<br>Крутые<br>Дорогие<br>Милые<br>Офигенские<br>Прикольные<br>Современные</p>',
+        'text1' => '<p>Креативные<br>Классные<br>Актуальные<br>Стрессоустойчивые<br>Клиентоориенториванные</p>',
         'text2' => '',
         'clientLogos' => [
             '/assets/img/clients/ferrero-rocher.png',

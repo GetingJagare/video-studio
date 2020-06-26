@@ -9,7 +9,7 @@ return [
             ['url' => '#', 'icon' => '/assets/img/social/telegram.png', 'altText' => 'Telegram']],
         'motto' => 'Lorem ipsum dolor sit amet'],
     'ru' => [
-        'realWorld' => 'Москва<br>ул. Полковая, 3<br>info@syndicate.studio<br>+7 993 888 00 05<br>8 800 234 85 58<br><br>',
+        'realWorld' => 'Москва<br>ул. Полковая, 3<br>info@syndicate.studio<br>8 800 234 85 58<br>8 993 888 00 05<br><br>',
         'socialLinks' => [
             ['url' => '#', 'icon' => '/assets/img/social/facebook.png', 'altText' => 'Фейсбук'],
             ['url' => '#', 'icon' => '/assets/img/social/instagram.png', 'altText' => 'Инстаграм'],

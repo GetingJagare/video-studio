@@ -14,7 +14,8 @@ $languageCode = Application::$app->config['language']['code'];
         foreach (Application::$app->config['works'] as $i => $work) {
 
             echo '<a href="' . $work[1][$languageCode]['url'] . '" class="work">';
-            echo '<video id="playerwork-' . $i . '-player" poster="' . $work[1][$languageCode]['posterImage'] .
+            echo '<video id="playerwork-' . $i . '-player" ' .
+                /*'poster="' . $work[1][$languageCode]['posterImage'] .*/
                 '" class="work__video" muted loop playsinline preload="metadata">';
 
             foreach ($work[1][$languageCode]['videoFiles'] as $videoFile) {
