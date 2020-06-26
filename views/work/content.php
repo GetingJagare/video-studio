@@ -14,7 +14,7 @@ $work = $works[$workId - 1];
 
         <?php $videoFile = $work[1][$languageCode]['videoFiles'][0]; ?>
 
-        <video id="work-player" muted loop autoplay
+        <video id="work-player" poster="<?php echo $work[1][$languageCode]['posterImage']; ?>" muted loop autoplay
                preload="metadata" class="work__video" playsinline>
             <source src="<?php echo $videoFile['src']; ?>" type="<?php echo $videoFile['type']; ?>">
         </video>
