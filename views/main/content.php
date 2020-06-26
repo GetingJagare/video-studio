@@ -35,8 +35,7 @@ $worksToShow = 5;
                 echo '<a href="' . Application::$app->config['works'][$i][1][$languageCode]['url'] . '" class="work">';
 
                 echo '<video id="playerwork-' . ($i + 1) . '-player" ' .
-                    /*'poster="' . Application::$app->config['works'][$i][1][$languageCode]['posterImage'] .*/
-                    '" class="work__video" muted loop>';
+                    ' class="work__video" muted loop>';
                 foreach (Application::$app->config['works'][$i][1][$languageCode]['videoFiles'] as $videoFile) {
                     echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">';
                 }
