@@ -11,7 +11,7 @@ class AssetManager
     /** @var string */
     public $route;
 
-    const VERSION = '1.7';
+    const VERSION = '1.8';
 
     const VENDOR_ASSETS = [
         'css' => [
@@ -96,6 +96,7 @@ class AssetManager
 
         foreach ($jsAssets as $jsAsset) {
 
+            $this->css .= "<link rel=\"preload\" href=\"$jsAsset\" as=\"script\"/>";
             $this->js .= "<script src=\"$jsAsset?v" . self::VERSION . "\"></script>";
 
         }
