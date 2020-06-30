@@ -6,7 +6,7 @@ $languageCode = Application::$app->config['language']['code'];
 
 <div class="d-flex flex-column min-vh-100 m-min-vh-75">
 
-    <?php echo $header; ?>
+    <?php include __DIR__ . '/header.php'; ?>
 
     <h1 class="page-title"><?php echo Application::$app->config['menu'][$languageCode]['contacts']['title']; ?></h1>
 
@@ -21,7 +21,7 @@ $languageCode = Application::$app->config['language']['code'];
         ?>
     </div>
 
-    <?php echo $footer; ?>
+    <?php include __DIR__ . '/footer.php'; ?>
 
     <?php echo Application::$app->assetManager->js; ?>
 

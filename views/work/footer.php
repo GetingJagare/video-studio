@@ -12,7 +12,7 @@ $work = $works[$workId - 1];
     <div id="marquee" class="marquee">
         <?php
         foreach ($work[1][$languageCode]['hashTags'] as $hashtag) {
-            echo '<span><a class="work-hashtag-link" href="' . $hashtag['url'] . '">' . $hashtag['tag'] . '</a></span>' . "\n";
+            echo '<span><a class="work-hashtag-link" href="' . $hashtag['url'] . '">' . $hashtag['tag'] . '</a></span>';
         }
         ?>
     </div>

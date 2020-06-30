@@ -12,8 +12,6 @@ window.addEventListener('DOMContentLoaded', function () {
         const toggler = event.target.closest('.navbar-toggler');
         const isEven = clickCounter % 2 === 0;
 
-        document.body.style.overflow = isEven ? 'hidden' : null;
-
         toggler.classList[isEven ? 'add' : 'remove']('is-active');
 
         blackBack.classList[isEven ? 'add' : 'remove']('show');

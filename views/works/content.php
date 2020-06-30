@@ -6,7 +6,7 @@ $languageCode = Application::$app->config['language']['code'];
 
 <div class="portfolio">
 
-    <?php echo $header; ?>
+    <?php include __DIR__ . '/header.php'; ?>
 
     <div class="works">
         <?php
@@ -32,7 +32,7 @@ $languageCode = Application::$app->config['language']['code'];
         ?>
     </div>
 
-    <?php echo $footer; ?>
+    <?php include __DIR__ . '/footer.php'; ?>
 
     <?php echo Application::$app->assetManager->js; ?>
 

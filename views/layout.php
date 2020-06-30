@@ -9,10 +9,10 @@
 
 </head>
 
-<body class="body">
+<body class="body <?php echo Application::$app->assetManager->route; ?>-page">
     <div class="black-back"></div>
 
-    <?php echo $content; ?>
+    <?php include Application::$app->viewManager->routeViewPath . '/content.php'; ?>
 </body>
 
 </html>

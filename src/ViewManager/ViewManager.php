@@ -11,6 +11,9 @@ class ViewManager
     /** @var string */
     public $route;
 
+    /** @var string */
+    public $routeViewPath;
+
     /** @var array */
     public $params = [];
 
@@ -22,22 +25,15 @@ class ViewManager
 
         $viewPath = \Application::$app->config['main']['viewsPath'];
 
-        $routeViewPath = $viewPath . "/" . ltrim($this->route, " /");
+        $this->routeViewPath = $viewPath . "/" . ltrim($this->route, " /");
 
         $title = $this->getTitle();
-
-        foreach (['header', 'footer', 'content'] as $var) {
-            ob_start();
-
-            include "$routeViewPath/$var.php";
-
-            ${$var} = ob_get_contents();
-            ob_end_clean();
-        }
 
         header("HTTP/1.1 200 OK");
 
         include "$viewPath/layout.php";
+
+        ob_get_flush();
 
         exit;
     }

@@ -1,9 +1,6 @@
 @import "common/breakpoints";
 
 .marquee {
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
 
   &__wrapper {
     white-space: nowrap;
