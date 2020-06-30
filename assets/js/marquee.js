@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function () {
     let marqueeWidth = 0;
     let marqueeAnimationTime;
 
-    if (marquee && marquee.children) {
+    if (marquee && marquee.children.length) {
 
         for (let i = 0; i < marquee.children.length; i++) {
 
