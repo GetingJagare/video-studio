@@ -2,6 +2,10 @@
   background-color: black;
   font-family: 'Gotham Pro';
   position: relative;
-  min-height: 100vh;
-  overflow-x: hidden;
+
+  &.contacts-page {
+    background-image: url(../img/contacts/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

@@ -6,7 +6,7 @@ const optimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 function cssWhiteList() {
-    return [/is-active/, /show/, /marquee/, /showreel/, /non-active/, /work-name/];
+    return [/is-active/, /show/, /marquee/, /showreel/, /non-active/, /work-name/, /about/, /footer/, /contacts/];
 }
 
 module.exports = {
@@ -68,7 +68,7 @@ module.exports = {
                         options: {
                             name: '[name].[ext]',
                             outputPath: '../img',
-                            emitFile: false
+                            //emitFile: false
                         }
                     }
                 ]

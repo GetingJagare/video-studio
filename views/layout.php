@@ -7,6 +7,14 @@
 
     <?php echo Application::$app->assetManager->css; ?>
 
+    <?php
+
+    if (Application::$app->assetManager->route == 'contacts') {
+        echo '<link rel="preload" href="/dist/img/back.jpg" as="image" />';
+    }
+
+    ?>
+
 </head>
 
 <body class="body <?php echo Application::$app->assetManager->route; ?>-page">

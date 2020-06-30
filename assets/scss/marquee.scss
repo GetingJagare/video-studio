@@ -16,6 +16,12 @@
     }
   }
 
+  &__logo {
+    @media (max-height: 500px) {
+      max-height: 90px;
+    }
+  }
+
   .work-hashtag-link {
     color: white;
     font-weight: bold;

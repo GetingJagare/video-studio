@@ -2,13 +2,25 @@
 
   &__col {
     color: white;
-    margin: 0 1rem 6rem 9rem;
+    margin: 0 1rem 5rem 9rem;
 
     p {
       font-size: 3.6rem;
+      line-height: 1.2;
+      font-weight: bold;
     }
 
     @media ($tab) {
+      margin-bottom: 2rem;
+
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-height: 500px) {
+      margin-bottom: 2rem;
+
       p {
         font-size: 2rem;
       }
@@ -26,11 +38,14 @@
         flex-basis: auto;
       }
     }
+
+
   }
 
-  &-page .marquee {
-    position: absolute;
-    bottom: 0;
+  &-page {
+    &.body {
+      height: 100vh;
+    }
   }
 
 }

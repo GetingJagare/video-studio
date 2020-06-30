@@ -19,7 +19,7 @@ return [
             'title' => 'Контакты',
             'link' => '/contacts'],
         'about' => [
-            'title' => 'О нас',
+            'title' => 'Мы',
             'link' => '/about']]];
 
 ?>
