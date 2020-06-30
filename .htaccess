@@ -1,4 +1,4 @@
 RewriteEngine on
 
-RewriteCond %{REQUEST_URI} ^/works/[0-9]+$
-RewriteRule ^ work/index.php
+RewriteCond %{REQUEST_URI} !^/(dist|assets)
+RewriteRule ^ index.php
