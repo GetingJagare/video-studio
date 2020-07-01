@@ -4,6 +4,10 @@
   position: relative;
   transition: all 100ms linear;
 
+  &:hover, &:link, &:visited, &:active {
+    text-decoration: none;
+  }
+
   &:nth-child(n+2) {
     margin-top: -5%;
   }
@@ -62,12 +66,12 @@
   }
 
   &-name {
-    position: absolute;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     width: 100%;
     text-align: center;
+    display: block;
   }
 
   &-title {

@@ -51,8 +51,6 @@ window.addEventListener('DOMContentLoaded', function () {
         marqueeItems = shuffleArray(marqueeItems);
     }
 
-    marqueeAnimationTime = Math.ceil(marqueeWidth / 150);
-
     marqueeWrapper.innerHTML = '<div></div>';
     marqueeWrapper = marqueeWrapper.firstElementChild;
 
@@ -60,22 +58,26 @@ window.addEventListener('DOMContentLoaded', function () {
         marqueeWrapper.innerHTML += marqueeItems.join('');
     }
 
-    const styleElement = document.createElement('style');
+    marqueeAnimationTime = Math.ceil(marqueeWidth / 150);
 
-    styleElement.textContent = `.marquee__wrapper {` +
-        `-webkit-animation: marquee-move ${marqueeAnimationTime}s linear infinite;` +
-        `-moz-animation:    marquee-move ${marqueeAnimationTime}s linear infinite;` +
-        `-ms-animation:     marquee-move ${marqueeAnimationTime}s linear infinite;` +
-        `-o-animation:      marquee-move ${marqueeAnimationTime}s linear infinite;` +
-        `animation:         marquee-move ${marqueeAnimationTime}s linear infinite;` +
-        `}` +
+    setTimeout(() => {
+        const styleElement = document.createElement('style');
 
-        `@keyframes         "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWidth}px;}}` +
-        `@-moz-keyframes    "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWidth}px;}}` +
-        `@-webkit-keyframes "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWidth}px;}}` +
-        `@-ms-keyframes     "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWidth}px;}}` +
-        `@-o-keyframes      "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWidth}px;}}`;
+        styleElement.textContent = `.marquee__wrapper {` +
+            `-webkit-animation: marquee-move ${marqueeAnimationTime}s linear infinite;` +
+            `-moz-animation:    marquee-move ${marqueeAnimationTime}s linear infinite;` +
+            `-ms-animation:     marquee-move ${marqueeAnimationTime}s linear infinite;` +
+            `-o-animation:      marquee-move ${marqueeAnimationTime}s linear infinite;` +
+            `animation:         marquee-move ${marqueeAnimationTime}s linear infinite;` +
+            `}` +
 
-    document.head.appendChild(styleElement);
+            `@keyframes         "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWrapper.offsetWidth}px;}}` +
+            `@-moz-keyframes    "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWrapper.offsetWidth}px;}}` +
+            `@-webkit-keyframes "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWrapper.offsetWidth}px;}}` +
+            `@-ms-keyframes     "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWrapper.offsetWidth}px;}}` +
+            `@-o-keyframes      "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWrapper.offsetWidth}px;}}`;
+
+        document.head.appendChild(styleElement);
+    }, 500);
 
 });
