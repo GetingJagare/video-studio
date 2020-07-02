@@ -21,9 +21,11 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     const marqueeMinWidth = 10000;
+    const animationMarginPerSecond = 150;
+    const animationStep = 1000;
     let marqueeItems = [];
     let marqueeWidth = 0;
-    let marqueeAnimationTime;
+    let marqueeAnimationSeconds;
 
     for (let i = 0; i < marqueeWrapper.children.length; i++) {
 
@@ -51,31 +53,40 @@ window.addEventListener('DOMContentLoaded', function () {
         marqueeItems = shuffleArray(marqueeItems);
     }
 
-    marqueeWrapper.innerHTML = '<div></div>';
-    marqueeWrapper = marqueeWrapper.firstElementChild;
+    marqueeWrapper.innerHTML = '';
 
-    for (let i = 0; i < Math.ceil(marqueeMinWidth / marqueeWidth); i += 1) {
+    const repeatCount = Math.ceil(marqueeMinWidth / marqueeWidth);
+
+    for (let i = 0; i < repeatCount; i += 1) {
         marqueeWrapper.innerHTML += marqueeItems.join('');
     }
 
-    marqueeAnimationTime = Math.ceil(marqueeWidth / 150);
+    marqueeAnimationSeconds = marqueeWidth * repeatCount / animationMarginPerSecond;
 
     setTimeout(() => {
         const styleElement = document.createElement('style');
 
         styleElement.textContent = `.marquee__wrapper {` +
-            `-webkit-animation: marquee-move ${marqueeAnimationTime}s linear infinite;` +
-            `-moz-animation:    marquee-move ${marqueeAnimationTime}s linear infinite;` +
-            `-ms-animation:     marquee-move ${marqueeAnimationTime}s linear infinite;` +
-            `-o-animation:      marquee-move ${marqueeAnimationTime}s linear infinite;` +
-            `animation:         marquee-move ${marqueeAnimationTime}s linear infinite;` +
-            `}` +
+            `-webkit-animation: marquee-move ${marqueeAnimationSeconds * 1000}ms linear infinite;` +
+            `-moz-animation:    marquee-move ${marqueeAnimationSeconds * 1000}ms linear infinite;` +
+            `-ms-animation:     marquee-move ${marqueeAnimationSeconds * 1000}ms linear infinite;` +
+            `-o-animation:      marquee-move ${marqueeAnimationSeconds * 1000}ms linear infinite;` +
+            `animation:         marquee-move ${marqueeAnimationSeconds * 1000}ms linear infinite;` +
+            `}`;
 
-            `@keyframes         "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWrapper.offsetWidth}px;}}` +
-            `@-moz-keyframes    "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWrapper.offsetWidth}px;}}` +
-            `@-webkit-keyframes "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWrapper.offsetWidth}px;}}` +
-            `@-ms-keyframes     "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWrapper.offsetWidth}px;}}` +
-            `@-o-keyframes      "marquee-move" {0% {margin-left: 0px;} 100% {margin-left: -${marqueeWrapper.offsetWidth}px;}}`;
+        let keyframes = '';
+
+        for (let i = 0; i <= 100; i += 10) {
+
+            keyframes += `${i}% {margin-left: -${marqueeWidth * repeatCount * i / 100}px}`;
+
+        }
+
+        styleElement.textContent += `@keyframes "marquee-move" {${keyframes}}` +
+            `@-moz-keyframes    "marquee-move" {${keyframes}}` +
+            `@-webkit-keyframes "marquee-move" {${keyframes}}` +
+            `@-ms-keyframes     "marquee-move" {${keyframes}}` +
+            `@-o-keyframes      "marquee-move" {${keyframes}}`;
 
         document.head.appendChild(styleElement);
     }, 500);
