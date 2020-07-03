@@ -14,8 +14,6 @@ $languageCode = Application::$app->config['language']['code'];
         foreach (Application::$app->config['works'] as $i => $work) {
 
             echo '<a href="' . $work[1][$languageCode]['url'] . '" class="work">';
-            echo '<span class="work-name work-name_' . ($i % 2 == 0 ? 'even' : 'odd') . '">' .
-                $work[1][$languageCode]['navbarTitle'] . '</span>';
             echo '<video id="playerwork-' . $i . '-player" ' .
                 'poster="' . $work[1][$languageCode]['posterImage'] .
                 '" class="work__video" muted loop playsinline preload="metadata">';
@@ -26,6 +24,8 @@ $languageCode = Application::$app->config['language']['code'];
             echo '</video>';
 
             echo '<div class="work-info">' . $work[1][$languageCode]['posterDescription'] . '</div>';
+            echo '<div class="work-name work-name_' . ($i % 2 == 0 ? 'even' : 'odd') . '">' .
+                $work[1][$languageCode]['navbarTitle'] . '</div>';
             echo '</a>';
             $i += 1;
         }

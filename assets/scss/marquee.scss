@@ -2,6 +2,8 @@
 
 .marquee {
 
+  display: flex;
+
   &__wrapper {
     white-space: nowrap;
   }
@@ -17,6 +19,8 @@
   }
 
   &__logo {
+
+    width: 180px;
     @media (max-height: 500px) {
       max-height: 90px;
     }

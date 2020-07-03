@@ -240,7 +240,13 @@ return [
                 ['src' => '/assets/img/videos/ШАГВМЕСТЕ.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/ШАГВМЕСТЕ.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'шагвместе', 'url' => '#'],
+                ['tag' => 'гошакуценко', 'url' => '#'],
+                ['tag' => 'всезвезды', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+                ['tag' => 'благотворительныйфонд', 'url' => '#']
+            ]
         ]]
     ],
     ['/^\/works\/7\/.*$/', [
@@ -272,7 +278,12 @@ return [
                 ['src' => '/assets/img/videos/200 лет Манежу.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/200 лет Манежу.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'Esquire', 'url' => '#'],
+                ['tag' => '200летманежу', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+                ['tag' => 'всезвезды', 'url' => '#'],
+            ]
         ]]],
     ['/^\/works\/8\/.*$/', [
         'en' => [
@@ -303,7 +314,12 @@ return [
                 ['src' => '/assets/img/videos/Burito - Ты всегда ждёшь меня.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Burito - Ты всегда ждёшь меня.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'Velvetmusic', 'url' => '#'],
+                ['tag' => 'Burito', 'url' => '#'],
+                ['tag' => 'тывсегдаждешьменя', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+            ]
         ]]],
     ['/^\/works\/9\/.*$/', [
         'en' => [
@@ -365,7 +381,11 @@ return [
                 ['src' => '/assets/img/videos/Dom Rosa Liquides Imaginaires.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Dom Rosa Liquides Imaginaires.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'liquidesimaginaires', 'url' => '#'],
+                ['tag' => 'DavidFrossard', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+            ]
         ]]],
     ['/^\/works\/11\/.*$/', [
         'en' => [
@@ -427,7 +447,15 @@ return [
                 ['src' => '/assets/img/videos/Outlet Village Белая Дача.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Outlet Village Белая Дача.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'outletvillagebelayadacha', 'url' => '#'],
+                ['tag' => 'Tolya Kozyrev', 'url' => '#'],
+                ['tag' => 'newhero', 'url' => '#'],
+                ['tag' => 'lilajacobs', 'url' => '#'],
+                ['tag' => 'zabelin', 'url' => '#'],
+                ['tag' => 'DOP Константин Колесников', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+            ]
         ]]],
     ['/^\/works\/13\/.*$/', [
         'en' => [
@@ -458,7 +486,13 @@ return [
                 ['src' => '/assets/img/videos/Ustinova - Я-Птица.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Ustinova - Я-Птица.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'ОксанаУстинова', 'url' => '#'],
+                ['tag' => 'Птица', 'url' => '#'],
+                ['tag' => 'клипза300', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+                ['tag' => 'любимыйстиль', 'url' => '#']
+            ]
         ]]],
     ['/^\/works\/14\/.*$/', [
         'en' => [
@@ -489,7 +523,12 @@ return [
                 ['src' => '/assets/img/videos/Валерия - Микроинфаркты.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Валерия - Микроинфаркты.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'Валерия', 'url' => '#'],
+                ['tag' => 'ВладимирУшаков', 'url' => '#'],
+                ['tag' => 'Микроинфаркты', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+            ]
         ]]],
     ['/^\/works\/15\/.*$/', [
         'en' => [
@@ -520,7 +559,11 @@ return [
                 ['src' => '/assets/img/videos/Влад Лисовец.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Влад Лисовец.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'владлисовец', 'url' => '#'],
+                ['tag' => 'contora_lisovets', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+            ]
         ]]],
     ['/^\/works\/16\/.*$/', [
         'en' => [
@@ -551,7 +594,13 @@ return [
                 ['src' => '/assets/img/videos/Владимир Пресняков - Неземная.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Владимир Пресняков - Неземная.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'Velvetmusic', 'url' => '#'],
+                ['tag' => 'Пресняков', 'url' => '#'],
+                ['tag' => 'неземная', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+                ['tag' => 'igorshmelev', 'url' => '#'],
+            ]
         ]]],
     ['/^\/works\/17\/.*$/', [
         'en' => [
@@ -582,7 +631,14 @@ return [
                 ['src' => '/assets/img/videos/Ёлка - Навсегда.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Ёлка - Навсегда.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'Ёлка', 'url' => '#'],
+                ['tag' => 'навсегда', 'url' => '#'],
+                ['tag' => 'стасваганов', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+                ['tag' => 'всезвезды', 'url' => '#'],
+                ['tag' => 'Velvetmusic', 'url' => '#'],
+            ]
         ]]],
     ['/^\/works\/18\/.*$/', [
         'en' => [
@@ -613,7 +669,13 @@ return [
                 ['src' => '/assets/img/videos/Елена Темникова поет кавер на песню «Новогодние игрушки» — вместе с дочкой!.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Елена Темникова поет кавер на песню «Новогодние игрушки» — вместе с дочкой!.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'ЛенаТемникова', 'url' => '#'],
+                ['tag' => 'GLAMOURRUSSIA', 'url' => '#'],
+                ['tag' => 'Инберг', 'url' => '#'],
+                ['tag' => 'ВасилийНефедкин', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#']
+            ]
         ]]],
     ['/^\/works\/19\/.*$/', [
         'en' => [
@@ -644,7 +706,13 @@ return [
                 ['src' => '/assets/img/videos/Звонкий - Паранормальные.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Звонкий - Паранормальные.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'Velvetmusic', 'url' => '#'],
+                ['tag' => 'Звонкий', 'url' => '#'],
+                ['tag' => 'паранармально', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+                ['tag' => 'любимыйстиль', 'url' => '#']
+            ]
         ]]],
     ['/^\/works\/20\/.*$/', [
         'en' => [
@@ -675,7 +743,15 @@ return [
                 ['src' => '/assets/img/videos/Новогодний шопинг в Outlet Village Белая Дача.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Новогодний шопинг в Outlet Village Белая Дача.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'outletvillagebelayadacha', 'url' => '#'],
+                ['tag' => 'Tolya Kozyrev', 'url' => '#'],
+                ['tag' => 'newhero', 'url' => '#'],
+                ['tag' => 'lilajacobs', 'url' => '#'],
+                ['tag' => 'zabelin', 'url' => '#'],
+                ['tag' => 'DOP Константин Колесников', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+            ]
         ]]],
     ['/^\/works\/21\/.*$/', [
         'en' => [
@@ -768,6 +844,13 @@ return [
                 ['src' => '/assets/img/videos/Юлианна Караулова - Ариведерчи.webm', 'type' => 'video/webm'],
             ],
             'posterImage' => '/assets/img/teasers/Юлианна Караулова - Ариведерчи.jpg',
-            'hashTags' => []
+            'hashTags' => [
+                ['tag' => 'ЮлианаКараулова', 'url' => '#'],
+                ['tag' => 'Ариведерчи', 'url' => '#'],
+                ['tag' => 'ЯнаРудковская', 'url' => '#'],
+                ['tag' => 'СашаМясникова', 'url' => '#'],
+                ['tag' => 'INBERGKAT', 'url' => '#'],
+                ['tag' => 'BroPRO', 'url' => '#'],
+            ]
         ]]],
 ];

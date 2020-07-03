@@ -66,12 +66,13 @@
   }
 
   &-name {
+    position: absolute;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     width: 100%;
     text-align: center;
-    display: block;
+    z-index: 999;
   }
 
   &-title {

@@ -40,9 +40,6 @@ $worksToShow = 5;
 
                 echo '<a href="' . $work[1][$languageCode]['url'] . '" class="work">';
 
-                echo '<span class="work-name work-name_' . ($i % 2 == 0 ? 'even' : 'odd') . '">' .
-                    $work[1][$languageCode]['navbarTitle'] . '</span>';
-
                 echo '<video id="playerwork-' . ($i + 1) . '-player" ' .
                     'poster="' . $work[1][$languageCode]['posterImage'] .
                     '" class="work__video" muted loop preload="metadata">';
@@ -53,6 +50,8 @@ $worksToShow = 5;
                 echo '<div class="work-info">' .
                     $work[1][$languageCode]['posterDescription'] .
                     '</div>';
+                echo '<div class="work-name work-name_' . ($i % 2 == 0 ? 'even' : 'odd') . '">' .
+                    $work[1][$languageCode]['navbarTitle'] . '</div>';
                 echo '</a>';
             }
             ?>
