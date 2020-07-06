@@ -236,10 +236,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/ШАГВМЕСТЕ.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/ШАГВМЕСТЕ.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work10.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work10.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/ШАГВМЕСТЕ.jpg',
+            'posterImage' => '/assets/img/teasers/work10.jpg',
             'hashTags' => [
                 ['tag' => 'шагвместе', 'url' => '#'],
                 ['tag' => 'гошакуценко', 'url' => '#'],
@@ -274,10 +274,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/200 лет Манежу.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/200 лет Манежу.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work11.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work11.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/200 лет Манежу.jpg',
+            'posterImage' => '/assets/img/teasers/work11.jpg',
             'hashTags' => [
                 ['tag' => 'Esquire', 'url' => '#'],
                 ['tag' => '200летманежу', 'url' => '#'],
@@ -310,10 +310,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Burito - Ты всегда ждёшь меня.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Burito - Ты всегда ждёшь меня.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work12.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work12.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Burito - Ты всегда ждёшь меня.jpg',
+            'posterImage' => '/assets/img/teasers/work12.jpg',
             'hashTags' => [
                 ['tag' => 'Velvetmusic', 'url' => '#'],
                 ['tag' => 'Burito', 'url' => '#'],
@@ -346,10 +346,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/DAASHA - В сонате.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/DAASHA - В сонате.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work13.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work13.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/DAASHA - В сонате.jpg',
+            'posterImage' => '/assets/img/teasers/work13.jpg',
             'hashTags' => []
         ]]],
     ['/^\/works\/10\/.*$/', [
@@ -377,10 +377,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Dom Rosa Liquides Imaginaires.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Dom Rosa Liquides Imaginaires.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work14.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work14.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Dom Rosa Liquides Imaginaires.jpg',
+            'posterImage' => '/assets/img/teasers/work14.jpg',
             'hashTags' => [
                 ['tag' => 'liquidesimaginaires', 'url' => '#'],
                 ['tag' => 'DavidFrossard', 'url' => '#'],
@@ -412,10 +412,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Maligina.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Maligina.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work15.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work15.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Maligina.jpg',
+            'posterImage' => '/assets/img/teasers/work15.jpg',
             'hashTags' => []
         ]]],
     ['/^\/works\/12\/.*$/', [
@@ -443,10 +443,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Outlet Village Белая Дача.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Outlet Village Белая Дача.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work16.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work16.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Outlet Village Белая Дача.jpg',
+            'posterImage' => '/assets/img/teasers/work16.jpg',
             'hashTags' => [
                 ['tag' => 'outletvillagebelayadacha', 'url' => '#'],
                 ['tag' => 'Tolya Kozyrev', 'url' => '#'],
@@ -482,10 +482,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Ustinova - Я-Птица.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Ustinova - Я-Птица.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work17.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work17.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Ustinova - Я-Птица.jpg',
+            'posterImage' => '/assets/img/teasers/work17.jpg',
             'hashTags' => [
                 ['tag' => 'ОксанаУстинова', 'url' => '#'],
                 ['tag' => 'Птица', 'url' => '#'],
@@ -519,10 +519,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Валерия - Микроинфаркты.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Валерия - Микроинфаркты.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work18.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work18.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Валерия - Микроинфаркты.jpg',
+            'posterImage' => '/assets/img/teasers/work18.jpg',
             'hashTags' => [
                 ['tag' => 'Валерия', 'url' => '#'],
                 ['tag' => 'ВладимирУшаков', 'url' => '#'],
@@ -555,10 +555,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Влад Лисовец.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Влад Лисовец.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work19.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work19.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Влад Лисовец.jpg',
+            'posterImage' => '/assets/img/teasers/work19.jpg',
             'hashTags' => [
                 ['tag' => 'владлисовец', 'url' => '#'],
                 ['tag' => 'contora_lisovets', 'url' => '#'],
@@ -590,10 +590,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Владимир Пресняков - Неземная.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Владимир Пресняков - Неземная.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work20.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work20.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Владимир Пресняков - Неземная.jpg',
+            'posterImage' => '/assets/img/teasers/work20.jpg',
             'hashTags' => [
                 ['tag' => 'Velvetmusic', 'url' => '#'],
                 ['tag' => 'Пресняков', 'url' => '#'],
@@ -627,10 +627,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Ёлка - Навсегда.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Ёлка - Навсегда.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work21.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work21.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Ёлка - Навсегда.jpg',
+            'posterImage' => '/assets/img/teasers/work21.jpg',
             'hashTags' => [
                 ['tag' => 'Ёлка', 'url' => '#'],
                 ['tag' => 'навсегда', 'url' => '#'],
@@ -665,10 +665,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Елена Темникова поет кавер на песню «Новогодние игрушки» — вместе с дочкой!.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Елена Темникова поет кавер на песню «Новогодние игрушки» — вместе с дочкой!.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work22.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work22.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Елена Темникова поет кавер на песню «Новогодние игрушки» — вместе с дочкой!.jpg',
+            'posterImage' => '/assets/img/teasers/work22.jpg',
             'hashTags' => [
                 ['tag' => 'ЛенаТемникова', 'url' => '#'],
                 ['tag' => 'GLAMOURRUSSIA', 'url' => '#'],
@@ -702,10 +702,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Звонкий - Паранормальные.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Звонкий - Паранормальные.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work23.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work23.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Звонкий - Паранормальные.jpg',
+            'posterImage' => '/assets/img/teasers/work23.jpg',
             'hashTags' => [
                 ['tag' => 'Velvetmusic', 'url' => '#'],
                 ['tag' => 'Звонкий', 'url' => '#'],
@@ -739,10 +739,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Новогодний шопинг в Outlet Village Белая Дача.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Новогодний шопинг в Outlet Village Белая Дача.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work24.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work24.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Новогодний шопинг в Outlet Village Белая Дача.jpg',
+            'posterImage' => '/assets/img/teasers/work24.jpg',
             'hashTags' => [
                 ['tag' => 'outletvillagebelayadacha', 'url' => '#'],
                 ['tag' => 'Tolya Kozyrev', 'url' => '#'],
@@ -778,10 +778,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Ревизорро.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Ревизорро.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work25.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work25.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Ревизорро.jpg',
+            'posterImage' => '/assets/img/teasers/work25.jpg',
             'hashTags' => []
         ]]],
     ['/^\/works\/22\/.*$/', [
@@ -809,10 +809,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Реклама NESCAFE Dolce Gusto с Машей Иваковой.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Реклама NESCAFE Dolce Gusto с Машей Иваковой.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work26.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work26.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Реклама NESCAFE Dolce Gusto с Машей Иваковой.jpg',
+            'posterImage' => '/assets/img/teasers/work26.jpg',
             'hashTags' => []
         ]]],
     ['/^\/works\/23\/.*$/', [
@@ -840,10 +840,10 @@ return [
             'description' => '',
             'posterDescription' => '',
             'videoFiles' => [
-                ['src' => '/assets/img/videos/Юлианна Караулова - Ариведерчи.mp4', 'type' => 'video/mp4'],
-                ['src' => '/assets/img/videos/Юлианна Караулова - Ариведерчи.webm', 'type' => 'video/webm'],
+                ['src' => '/assets/img/videos/work27.mp4', 'type' => 'video/mp4'],
+                ['src' => '/assets/img/videos/work27.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/Юлианна Караулова - Ариведерчи.jpg',
+            'posterImage' => '/assets/img/teasers/work27.jpg',
             'hashTags' => [
                 ['tag' => 'ЮлианаКараулова', 'url' => '#'],
                 ['tag' => 'Ариведерчи', 'url' => '#'],
