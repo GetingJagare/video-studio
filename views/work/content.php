@@ -21,9 +21,11 @@ $languageSwitcherLabel = Application::$app->config['language']['switcherLabel'];
 $languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
 ?>
 
+<div class="d-flex flex-column h-100">
+
     <?php include "header.php"; ?>
 
-    <div class="work single">
+    <div class="work single flex-grow-1">
 
         <video id="work-player" poster="<?php echo $work[1][$languageCode]['posterImage']; ?>"
                muted loop autoplay preload="metadata" class="work__video" playsinline>
@@ -41,10 +43,12 @@ $languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
         <p class="work-description"><?php echo $work[1][$languageCode]['description']; ?></p>
     </div>
 
-<?php
-$copyright = Application::$app->config['copyright'][$languageCode];
-?>
+    <?php
+    $copyright = Application::$app->config['copyright'][$languageCode];
+    ?>
 
     <?php include "footer.php"; ?>
+
+</div>
 
 <?php echo Application::$app->assetManager->js; ?>
