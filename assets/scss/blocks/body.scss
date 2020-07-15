@@ -11,4 +11,8 @@
     background-position: center;
     height: 100vh;
   }
+
+  &.contacts-page, &.about-page {
+    height: 100vh;
+  }
 }
