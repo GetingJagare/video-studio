@@ -34,7 +34,7 @@ return [
                 ['src' => '/assets/img/videos/work1.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work1.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work1.jpg',
+            'posterImage' => '/assets/posters/work1.jpg',
             'hashTags' => [
                 ['tag' => 'Реклама', 'url' => '#'],
                 ['tag' => 'Интеграция', 'url' => '#'],
@@ -76,7 +76,7 @@ return [
                 ['src' => '/assets/img/videos/work2.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work2.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work2.jpg',
+            'posterImage' => '/assets/posters/work2.jpg',
             'hashTags' => [
                 ['tag' => 'Реклама', 'url' => '#'],
                 ['tag' => 'Заставка', 'url' => '#'],
@@ -100,7 +100,7 @@ return [
             'posterDescription' => 'Lorem3 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work3.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work3.jpg',
+            'posterImage' => '/assets/posters/work3.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #3-1', 'url' => '#'],
                 ['tag' => 'hashtag #3-2', 'url' => '#'],
@@ -118,7 +118,7 @@ return [
                 ['src' => '/assets/img/videos/work3.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work3.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work3.jpg',
+            'posterImage' => '/assets/posters/work3.jpg',
             'hashTags' => [
                 ['tag' => 'Реклама', 'url' => '#'],
                 ['tag' => 'Заставка', 'url' => '#'],
@@ -142,7 +142,7 @@ return [
             'posterDescription' => 'Lorem4 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work4.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work4.jpg',
+            'posterImage' => '/assets/posters/work4.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #4-1', 'url' => '#'],
                 ['tag' => 'hashtag #4-2', 'url' => '#'],
@@ -160,7 +160,7 @@ return [
                 ['src' => '/assets/img/videos/work4.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work4.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work4.jpg',
+            'posterImage' => '/assets/posters/work4.jpg',
             'hashTags' => [
                 ['tag' => 'Реклама', 'url' => '#'],
                 ['tag' => 'Заставка', 'url' => '#'],
@@ -184,7 +184,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -202,7 +202,7 @@ return [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work8.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'Москва', 'url' => '#'],
                 ['tag' => 'Участвую в развитии', 'url' => '#'],
@@ -221,7 +221,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -239,7 +239,7 @@ return [
                 ['src' => '/assets/img/videos/work10.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work10.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work10.jpg',
+            'posterImage' => '/assets/posters/work10.jpg',
             'hashTags' => [
                 ['tag' => 'шагвместе', 'url' => '#'],
                 ['tag' => 'гошакуценко', 'url' => '#'],
@@ -259,7 +259,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -277,7 +277,7 @@ return [
                 ['src' => '/assets/img/videos/work11.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work11.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work11.jpg',
+            'posterImage' => '/assets/posters/work11.jpg',
             'hashTags' => [
                 ['tag' => 'Esquire', 'url' => '#'],
                 ['tag' => '200летманежу', 'url' => '#'],
@@ -295,7 +295,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -313,7 +313,7 @@ return [
                 ['src' => '/assets/img/videos/work12.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work12.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work12.jpg',
+            'posterImage' => '/assets/posters/work12.jpg',
             'hashTags' => [
                 ['tag' => 'Velvetmusic', 'url' => '#'],
                 ['tag' => 'Burito', 'url' => '#'],
@@ -331,7 +331,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -349,7 +349,7 @@ return [
                 ['src' => '/assets/img/videos/work13.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work13.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work13.jpg',
+            'posterImage' => '/assets/posters/work13.jpg',
             'hashTags' => []
         ]]],
     ['/^\/works\/10\/.*$/', [
@@ -362,7 +362,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -380,7 +380,7 @@ return [
                 ['src' => '/assets/img/videos/work14.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work14.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work14.jpg',
+            'posterImage' => '/assets/posters/work14.jpg',
             'hashTags' => [
                 ['tag' => 'liquidesimaginaires', 'url' => '#'],
                 ['tag' => 'DavidFrossard', 'url' => '#'],
@@ -397,7 +397,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -415,7 +415,7 @@ return [
                 ['src' => '/assets/img/videos/work15.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work15.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work15.jpg',
+            'posterImage' => '/assets/posters/work15.jpg',
             'hashTags' => []
         ]]],
     ['/^\/works\/12\/.*$/', [
@@ -428,7 +428,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -446,7 +446,7 @@ return [
                 ['src' => '/assets/img/videos/work16.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work16.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work16.jpg',
+            'posterImage' => '/assets/posters/work16.jpg',
             'hashTags' => [
                 ['tag' => 'outletvillagebelayadacha', 'url' => '#'],
                 ['tag' => 'Tolya Kozyrev', 'url' => '#'],
@@ -467,7 +467,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -485,7 +485,7 @@ return [
                 ['src' => '/assets/img/videos/work17.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work17.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work17.jpg',
+            'posterImage' => '/assets/posters/work17.jpg',
             'hashTags' => [
                 ['tag' => 'ОксанаУстинова', 'url' => '#'],
                 ['tag' => 'Птица', 'url' => '#'],
@@ -504,7 +504,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -522,7 +522,7 @@ return [
                 ['src' => '/assets/img/videos/work18.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work18.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work18.jpg',
+            'posterImage' => '/assets/posters/work18.jpg',
             'hashTags' => [
                 ['tag' => 'Валерия', 'url' => '#'],
                 ['tag' => 'ВладимирУшаков', 'url' => '#'],
@@ -540,7 +540,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -558,7 +558,7 @@ return [
                 ['src' => '/assets/img/videos/work19.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work19.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work19.jpg',
+            'posterImage' => '/assets/posters/work19.jpg',
             'hashTags' => [
                 ['tag' => 'владлисовец', 'url' => '#'],
                 ['tag' => 'contora_lisovets', 'url' => '#'],
@@ -575,7 +575,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -593,7 +593,7 @@ return [
                 ['src' => '/assets/img/videos/work20.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work20.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work20.jpg',
+            'posterImage' => '/assets/posters/work20.jpg',
             'hashTags' => [
                 ['tag' => 'Velvetmusic', 'url' => '#'],
                 ['tag' => 'Пресняков', 'url' => '#'],
@@ -612,7 +612,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -630,7 +630,7 @@ return [
                 ['src' => '/assets/img/videos/work21.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work21.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work21.jpg',
+            'posterImage' => '/assets/posters/work21.jpg',
             'hashTags' => [
                 ['tag' => 'Ёлка', 'url' => '#'],
                 ['tag' => 'навсегда', 'url' => '#'],
@@ -650,7 +650,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -668,7 +668,7 @@ return [
                 ['src' => '/assets/img/videos/work22.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work22.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work22.jpg',
+            'posterImage' => '/assets/posters/work22.jpg',
             'hashTags' => [
                 ['tag' => 'ЛенаТемникова', 'url' => '#'],
                 ['tag' => 'GLAMOURRUSSIA', 'url' => '#'],
@@ -687,7 +687,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -705,7 +705,7 @@ return [
                 ['src' => '/assets/img/videos/work23.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work23.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work23.jpg',
+            'posterImage' => '/assets/posters/work23.jpg',
             'hashTags' => [
                 ['tag' => 'Velvetmusic', 'url' => '#'],
                 ['tag' => 'Звонкий', 'url' => '#'],
@@ -724,7 +724,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -742,7 +742,7 @@ return [
                 ['src' => '/assets/img/videos/work24.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work24.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work24.jpg',
+            'posterImage' => '/assets/posters/work24.jpg',
             'hashTags' => [
                 ['tag' => 'outletvillagebelayadacha', 'url' => '#'],
                 ['tag' => 'Tolya Kozyrev', 'url' => '#'],
@@ -763,7 +763,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -781,7 +781,7 @@ return [
                 ['src' => '/assets/img/videos/work25.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work25.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work25.jpg',
+            'posterImage' => '/assets/posters/work25.jpg',
             'hashTags' => []
         ]]],
     ['/^\/works\/22\/.*$/', [
@@ -794,7 +794,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -812,7 +812,7 @@ return [
                 ['src' => '/assets/img/videos/work26.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work26.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work26.jpg',
+            'posterImage' => '/assets/posters/work26.jpg',
             'hashTags' => []
         ]]],
     ['/^\/works\/23\/.*$/', [
@@ -825,7 +825,7 @@ return [
             'posterDescription' => 'Lorem8 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
             'videoFiles' => [
                 ['src' => '/assets/img/videos/work8.mp4', 'type' => 'video/mp4']],
-            'posterImage' => '/assets/img/teasers/work8.jpg',
+            'posterImage' => '/assets/posters/work8.jpg',
             'hashTags' => [
                 ['tag' => 'hashtag #8-1', 'url' => '#'],
                 ['tag' => 'hashtag #8-2', 'url' => '#'],
@@ -843,7 +843,7 @@ return [
                 ['src' => '/assets/img/videos/work27.mp4', 'type' => 'video/mp4'],
                 ['src' => '/assets/img/videos/work27.webm', 'type' => 'video/webm'],
             ],
-            'posterImage' => '/assets/img/teasers/work27.jpg',
+            'posterImage' => '/assets/posters/work27.jpg',
             'hashTags' => [
                 ['tag' => 'ЮлианаКараулова', 'url' => '#'],
                 ['tag' => 'Ариведерчи', 'url' => '#'],
