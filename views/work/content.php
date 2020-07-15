@@ -4,7 +4,15 @@ $languageCode = Application::$app->config['language']['code'];
 
 $works = Application::$app->config['works'];
 $workId = Application::$app->viewManager->params['id'];
-$work = $works[$workId - 1];
+$work = isset($works[$workId - 1]) ? $works[$workId - 1] : null;
+
+if (!$work) {
+
+    header("HTTP/1.1 301 Moved Permanently");
+    header("Location: /");
+
+    exit;
+}
 
 ?>
 

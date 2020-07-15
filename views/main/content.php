@@ -36,6 +36,9 @@ $worksToShow = 5;
         <div class="works">
 
             <?php
+
+            shuffle(Application::$app->config['works']);
+
             foreach (Application::$app->config['works'] as $i => $work) {
 
                 echo '<a href="' . $work[1][$languageCode]['url'] . '" class="work">';

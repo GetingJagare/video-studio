@@ -11,6 +11,9 @@ $languageCode = Application::$app->config['language']['code'];
     <div class="works">
         <?php
         $i = 1;
+
+        shuffle(Application::$app->config['works']);
+
         foreach (Application::$app->config['works'] as $i => $work) {
 
             echo '<a href="' . $work[1][$languageCode]['url'] . '" class="work">';
