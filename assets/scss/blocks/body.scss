@@ -12,6 +12,7 @@
   }
 
   &.contacts-page, &.about-page {
-    max-height: 100vh;
+    height: 100vh;
+    overflow-y: hidden;
   }
 }
