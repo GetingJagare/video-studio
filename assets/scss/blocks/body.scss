@@ -2,17 +2,16 @@
   background-color: black;
   font-family: 'Gotham Pro';
   position: relative;
-  min-height: 100vh;
+  //min-height: 100vh;
 
   &.contacts-page {
     background-image: url(../img/contacts/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    //height: 100vh;
   }
 
   &.contacts-page, &.about-page {
-    height: 100vh;
+    max-height: 100vh;
   }
 }

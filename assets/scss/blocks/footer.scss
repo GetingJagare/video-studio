@@ -1,3 +1,13 @@
 .footer {
   overflow: hidden;
+
+  &_fixed {
+    position: fixed;
+  }
+
+  &_bottom {
+    &_0 {
+      bottom: 0;
+    }
+  }
 }
