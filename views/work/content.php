@@ -38,9 +38,13 @@ $languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
 
         <h1 class="work-title"><?php echo $work[1][$languageCode]['pageTitle']; ?></h1>
 
-        <div class="work-title work-title_sub"><?php echo $work[1][$languageCode]['title']; ?></div>
+        <?php if (!empty($work[1][$languageCode]['title'])) { ?>
+            <div class="work-title work-title_sub"><?php echo $work[1][$languageCode]['title']; ?></div>
+        <?php } ?>
 
-        <p class="work-description"><?php echo $work[1][$languageCode]['description']; ?></p>
+        <?php if (!empty($work[1][$languageCode]['description'])) { ?>
+            <p class="work-description"><?php echo $work[1][$languageCode]['description']; ?></p>
+        <?php } ?>
     </div>
 
     <?php

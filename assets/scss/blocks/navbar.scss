@@ -1,10 +1,11 @@
 .navbar {
   z-index: 1000;
   margin-top: 0!important;
-  height: 50px;
+  height: $navbarHeight;
 
   &-brand {
     margin-top: .2rem;
+    font-size: $oneRem;
 
     &, &:hover {
       color: white;
@@ -112,8 +113,8 @@
 
       &.collapsible-item {
         position: absolute;
-        top: 50px;
-        height: calc(100vh - 50px);
+        top: $navbarHeight;
+        height: calc(100vh - #{$navbarHeight});
         width: calc(100% + 1rem);
         left: -0.5rem;
         z-index: 1000;
@@ -121,9 +122,10 @@
     }
 
     &-brand {
-      & > img {
+      /*& > img {
         height: 1.2rem;
-      }
+      }*/
+      font-size: $oneRem * 0.9;
     }
 
     &-text {
