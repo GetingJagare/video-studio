@@ -24,17 +24,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?php echo $title; ?></title>
-    <meta name="description" content="<?php echo Application::$app->config['main']['description'][$languageCode]; ?>" />
+    <meta name="description" content="<?php echo Application::$app->config['main']['description']; ?>" />
 
     <meta property="og:url" content="<?php echo 'http' . (isset($_SERVER['HTTPS']) ? '?' : '') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" />
     <meta property="og:type" content="website" />
 
     <meta property="og:title" content="<?php echo $title; ?>" />
-    <meta property="og:description" content="<?php echo Application::$app->config['main']['description'][$languageCode]; ?>" />
+    <meta property="og:description" content="<?php echo Application::$app->config['main']['description']; ?>" />
 
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:title" content="<?php echo $title; ?>" />
-    <meta property="twitter:description" content="<?php echo Application::$app->config['main']['description'][$languageCode]; ?>" />
+    <meta property="twitter:description" content="<?php echo Application::$app->config['main']['description']; ?>" />
 
     <?php echo Application::$app->assetManager->css; ?>
 
