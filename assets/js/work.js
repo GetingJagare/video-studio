@@ -3,35 +3,31 @@
 window.addEventListener('DOMContentLoaded', function () {
 
     const workPlayer = document.getElementById('work-player');
-
-    if (workPlayer) {
-
-        workPlayer.addEventListener('click', function () {
-
-            workPlayer.muted = !workPlayer.muted;
-
-        });
-
-        workPlayer.muted = true;
-
-    }
-
     const muteBtn = document.querySelector('.mute-btn');
 
-    if (muteBtn) {
+    let muteObject = {};
 
-        muteBtn.addEventListener('click', (event) => {
+    Object.defineProperty(muteObject, 'muted', {
+        set: function (value) {
 
-            const isMuted = muteBtn.classList.contains('mute-btn_muted');
-
-            workPlayer.muted = !isMuted;
+            workPlayer.muted = value;
 
             muteBtn.classList.toggle('mute-btn_muted');
             muteBtn.classList.toggle('mute-btn_switched');
+        }
+    });
 
-        });
+    workPlayer.addEventListener('click', function () {
 
-    }
+        muteObject.muted = !workPlayer.muted;
+
+    });
+
+    muteBtn.addEventListener('click', () => {
+
+        muteObject.muted = !muteBtn.classList.contains('mute-btn_muted');
+
+    });
 
     const footer = document.body.querySelector('.footer');
 

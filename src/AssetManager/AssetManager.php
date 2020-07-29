@@ -11,7 +11,7 @@ class AssetManager
     /** @var string */
     public $route;
 
-    const VERSION = '2.0.1';
+    const VERSION = '2.0.2';
 
     const VENDOR_ASSETS = [
         'css' => [
