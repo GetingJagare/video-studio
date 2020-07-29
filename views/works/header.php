@@ -7,7 +7,7 @@ $languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
     <a class="navbar-brand p-0 mx-3 mb-0" href="/">
         <img src="/assets/img/syndicate-logo.png" alt="Syndicate Logo" class="navbar__logo">
     </a>
-    <div class="navbar-text text-center flex-column my-2 p-0">
+    <div class="navbar-text text-center flex-column p-0">
         <span title="Перемешать видео" class="shuffle-btn d-block"></span>
     </div>
     <button class="navbar-toggler mx-3 my-2 p-0" type="button" data-toggle="collapse" data-target=".collapsible-item">
