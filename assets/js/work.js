@@ -16,6 +16,23 @@ window.addEventListener('DOMContentLoaded', function () {
 
     }
 
+    const muteBtn = document.querySelector('.mute-btn');
+
+    if (muteBtn) {
+
+        muteBtn.addEventListener('click', (event) => {
+
+            const isMuted = muteBtn.classList.contains('mute-btn_muted');
+
+            workPlayer.muted = !isMuted;
+
+            muteBtn.classList.toggle('mute-btn_muted');
+            muteBtn.classList.toggle('mute-btn_switched');
+
+        });
+
+    }
+
     const footer = document.body.querySelector('.footer');
 
     if (!footer) {

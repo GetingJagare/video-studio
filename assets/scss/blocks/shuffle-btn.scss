@@ -1,0 +1,14 @@
+.shuffle-btn {
+  cursor: pointer;
+  width: 45px;
+  height: 25px;
+  background-image: url(/assets/img/icons/shuffle-btn.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media ($mob) {
+    width: 40px;
+    height: 20px;
+  }
+}

@@ -1,7 +1,5 @@
 <?php
 
-$languageCode = Application::$app->config['language']['code'];
-
 $works = Application::$app->config['works'];
 $workId = Application::$app->viewManager->params['id'];
 $work = isset($works[$workId - 1]) ? $works[$workId - 1] : null;
@@ -27,14 +25,20 @@ $languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
 
     <div class="work single flex-grow-1">
 
-        <video id="work-player" poster="<?php echo $work[1][$languageCode]['posterImage']; ?>"
-               muted loop autoplay preload="metadata" class="work__video" playsinline>
-            <?php
-            foreach ($work[1][$languageCode]['videoFiles'] as $videoFile) {
-                echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">';
-            }
-            ?>
-        </video>
+        <div class="position-relative">
+            <video id="work-player" poster="<?php echo $work[1][$languageCode]['posterImage']; ?>"
+                   muted loop autoplay preload="metadata" class="work__video" playsinline>
+                <?php
+                foreach ($work[1][$languageCode]['videoFiles'] as $videoFile) {
+                    echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">';
+                }
+                ?>
+            </video>
+
+            <div class="work__toolbar pl-3 position-absolute">
+                <span class="d-inline-block mute-btn mute-btn_muted"></span>
+            </div>
+        </div>
 
         <h1 class="work-title"><?php echo $work[1][$languageCode]['pageTitle']; ?></h1>
 

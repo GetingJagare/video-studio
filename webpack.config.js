@@ -6,7 +6,8 @@ const optimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 function cssWhiteList() {
-    return [/is-active/, /show/, /marquee/, /showreel/, /non-active/, /work-name/, /about/, /footer/, /contacts/];
+    return [/is-active/, /show/, /marquee/, /showreel/, /non-active/, /work-name/, /about/, /footer/, /contacts/, /work/,
+    /mute-btn/];
 }
 
 module.exports = {

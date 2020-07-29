@@ -1,6 +1,5 @@
 <?php
 
-$languageCode = Application::$app->config['language']['code'];
 $worksToShow = 5;
 
 ?>
@@ -41,7 +40,8 @@ $worksToShow = 5;
 
             foreach (Application::$app->config['works'] as $i => $work) {
 
-                echo '<a href="' . $work[1][$languageCode]['url'] . '" class="work">';
+                echo '<a href="' . $work[1][$languageCode]['url'] . '" class="work work_' . ($i % 2 == 0 ? 'even' : 'odd') .
+                    ($i == 0 ? ' work_first' : '') . '">';
 
                 echo '<video id="playerwork-' . ($i + 1) . '-player" ' .
                     'poster="' . $work[1][$languageCode]['posterImage'] .
@@ -53,8 +53,7 @@ $worksToShow = 5;
                 echo '<div class="work-info">' .
                     $work[1][$languageCode]['posterDescription'] .
                     '</div>';
-                echo '<div class="work-name work-name_' . ($i % 2 == 0 ? 'even' : 'odd') . '">' .
-                    $work[1][$languageCode]['navbarTitle'] . '</div>';
+                echo '<div class="work-name">' . $work[1][$languageCode]['navbarTitle'] . '</div>';
                 echo '</a>';
             }
             ?>

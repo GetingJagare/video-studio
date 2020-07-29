@@ -4,16 +4,15 @@
   height: $navbarHeight;
 
   &-brand {
-    margin-top: .2rem;
     font-size: $oneRem;
 
     &, &:hover {
       color: white;
     }
+  }
 
-    & > img {
-      height: 0.81rem;
-    }
+  &__logo {
+    height: 0.81rem;
   }
 
   &-flex-1-section {
@@ -26,13 +25,15 @@
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     font-style: italic;
-    flex-grow: 1;
-    margin-left: 20.5rem !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 400px;
   }
 
   @media screen and ($tab) {
     &-text {
-      margin-left: 2rem!important;
+      max-width: 300px;
     }
   }
 
@@ -43,6 +44,8 @@
       position: relative;
       display: flex;
       align-items: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
 
       &:focus {
         outline: none;
@@ -122,14 +125,12 @@
     }
 
     &-brand {
-      /*& > img {
-        height: 1.2rem;
-      }*/
       font-size: $oneRem * 0.9;
     }
 
     &-text {
-      display: none;
+      position: unset;
+      //transform: unset;
     }
   }
 }

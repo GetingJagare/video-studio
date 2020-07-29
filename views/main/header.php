@@ -1,14 +1,16 @@
 <?php
-    $languageCode = Application::$app->config['language']['code'];
     $languageSwitcherLabel = Application::$app->config['language']['switcherLabel'];
     $languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
 ?>
 
-<nav class="navbar navbar-expand-md align-items-center mt-2 mx-2">
+<nav class="navbar navbar-expand-md align-items-center mx-2">
     <a class="navbar-brand text-uppercase font-weight-bold" href="/">
-        <img src="/assets/img/syndicate-logo.png" alt="Syndicate Logo"><br />
+        <img src="/assets/img/syndicate-logo.png" alt="Syndicate Logo" class="navbar__logo"><br />
         <?php echo Application::$app->config['main']['title'][$languageCode]; ?>
     </a>
+    <div class="navbar-text text-center flex-column p-0">
+        <span title="Перемешать видео" class="shuffle-btn d-block"></span>
+    </div>
     <button class="navbar-toggler mx-3 my-2 p-0" type="button" data-toggle="collapse" data-target=".collapsible-item">
         <div class="navbar-toggler__line"></div>
     </button>

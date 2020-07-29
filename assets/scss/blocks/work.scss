@@ -3,20 +3,21 @@
   width: 50%;
   position: relative;
   transition: all 100ms linear;
+  margin-top: -5%;
 
   &:hover, &:link, &:visited, &:active {
     text-decoration: none;
   }
 
-  &:nth-child(n+2) {
-    margin-top: -5%;
+  &_first {
+    margin-top: 0;
   }
 
-  &:nth-child(odd) {
+  &_even {
     left: 10%;
   }
 
-  &:nth-child(even) {
+  &_odd {
     left: 40%;
   }
 
@@ -125,6 +126,10 @@
 
   }
 
+  &__toolbar {
+    bottom: 10px;
+  }
+
   @media ($mob) {
     width: 65%;
 
@@ -181,6 +186,10 @@
       left: auto;
       width: 100%;
 
+    }
+
+    &-page .navbar-text {
+      display: none;
     }
   }
 }

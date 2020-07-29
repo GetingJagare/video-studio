@@ -1,5 +1,4 @@
 <?php
-$languageCode = Application::$app->config['language']['code'];
 $copyright = Application::$app->config['copyright'][$languageCode];
 
 $works = Application::$app->config['works'];

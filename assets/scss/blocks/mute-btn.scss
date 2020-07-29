@@ -1,0 +1,21 @@
+.mute-btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &_muted {
+    background-image: url(/assets/img/icons/sound-muted.svg);
+  }
+
+  &_switched {
+    background-image: url(/assets/img/icons/sound-switched.svg);
+  }
+
+  @media ($tab) {
+    width: 30px;
+    height: 30px;
+  }
+}

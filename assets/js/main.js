@@ -1,4 +1,5 @@
 import "../scss/main.scss";
+import {shuffleArray} from './helpers';
 
 window.addEventListener('DOMContentLoaded', function () {
 
@@ -19,5 +20,37 @@ window.addEventListener('DOMContentLoaded', function () {
         clickCounter ++;
 
     });
+
+    const shuffleBtn = document.querySelector('.shuffle-btn');
+    const worksWrapper = document.querySelector('.works');
+
+    if (shuffleBtn && worksWrapper) {
+
+        shuffleBtn.addEventListener('click', (event) => {
+
+            const shuffledWorks = shuffleArray([...worksWrapper.querySelectorAll('.work')]);
+
+            worksWrapper.innerHTML = '';
+
+            shuffledWorks.forEach((work, index) => {
+
+                work.className = '';
+                work.classList.add('work');
+
+                if (index === 0) {
+                    work.classList.add('work_first');
+                }
+
+                const isEven = index % 2 === 0;
+
+                work.classList.add(`work_${isEven ? 'even' : 'odd'}`);
+
+                worksWrapper.appendChild(work);
+
+            });
+
+        });
+
+    }
 
 });
