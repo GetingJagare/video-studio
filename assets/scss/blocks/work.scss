@@ -127,8 +127,7 @@
   }
 
   &__toolbar {
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
   }
 
   @media ($mob) {
@@ -191,10 +190,6 @@
 
     &-page .navbar-text {
       display: none;
-    }
-
-    &__toolbar {
-      position: absolute !important;
     }
   }
 }

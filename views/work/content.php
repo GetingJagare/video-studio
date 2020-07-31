@@ -35,7 +35,7 @@ $languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
                 ?>
             </video>
 
-            <div class="work__toolbar pl-3 position-fixed">
+            <div class="work__toolbar pl-3 position-absolute">
                 <span class="d-inline-block mute-btn mute-btn_muted"></span>
             </div>
         </div>
