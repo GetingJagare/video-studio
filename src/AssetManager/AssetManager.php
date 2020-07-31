@@ -96,7 +96,7 @@ class AssetManager
 
         foreach ($jsAssets as $jsAsset) {
 
-            $this->css .= "<link rel=\"preload\" href=\"$jsAsset\" as=\"script\"/>";
+            //$this->css .= "<link rel=\"preload\" href=\"$jsAsset\" as=\"script\"/>";
             $this->js .= "<script src=\"$jsAsset?v" . self::VERSION . "\"></script>";
 
         }
