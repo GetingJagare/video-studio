@@ -4,9 +4,8 @@
 ?>
 
 <nav class="navbar navbar-expand-md align-items-center mx-2">
-    <a class="navbar-brand text-uppercase font-weight-bold" href="/">
+    <a class="navbar-brand text-uppercase font-weight-bold mx-3 p-0 mb-0" href="/">
         <img src="/assets/img/syndicate-logo.png" alt="Syndicate Logo" class="navbar__logo"><br />
-        <?php echo Application::$app->config['main']['title'][$languageCode]; ?>
     </a>
     <div class="navbar-text text-center flex-column p-0">
         <span title="Перемешать видео" class="shuffle-btn d-block"></span>

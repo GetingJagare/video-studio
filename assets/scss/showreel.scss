@@ -40,7 +40,7 @@
     width: 50%;
   }
 
-  &-logline {
+  &-logo, &-logline {
     color: white;
     text-transform: uppercase;
     font-size: 8vh;
@@ -50,6 +50,11 @@
   }
 
   @media ($mob) {
+
+    &-logo {
+      font-size: 5vw;
+      width: 60%;
+    }
 
     &-logline {
       font-size: 5vw;

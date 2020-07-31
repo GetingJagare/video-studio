@@ -16,9 +16,15 @@ $worksToShow = 5;
             }
             ?>
         </video>
-        <img class="syndicate-logo img-fluid"
-             src="<?php echo Application::$app->config['showreel'][$languageCode]['logoImage']; ?>"
-             alt="Syndicate Logo">
+        <div class="syndicate-logo text-center">
+            <img class="img-fluid"
+                 src="<?php echo Application::$app->config['showreel'][$languageCode]['logoImage']; ?>"
+                 alt="Syndicate Logo">
+            <br>
+            <div class="mt-3">
+                <?php echo Application::$app->config['main']['title'][$languageCode]; ?>
+            </div>
+        </div>
         <div class="syndicate-logline"><?php echo Application::$app->config['showreel'][$languageCode]['description']; ?></div>
         <div class="chevron"></div>
     </div>
