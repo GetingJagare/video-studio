@@ -5,5 +5,6 @@ return [
     '\/contacts\/?' => 'contacts',
     '\/works\/?' => 'works',
     '\/works\/(?<id>\d+)\/?' => 'work',
-    '\/about\/?' => 'about'
+    '\/about\/?' => 'about',
+    '\/c\/olett\/?' => 'pages/olett'
 ];

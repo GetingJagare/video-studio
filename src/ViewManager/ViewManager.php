@@ -12,7 +12,10 @@ class ViewManager
     public $route;
 
     /** @var string */
-    public $routeViewPath;
+    public $routeFile;
+
+    /** @var string */
+    public $viewPath;
 
     /** @var array */
     public $params = [];
@@ -23,61 +26,28 @@ class ViewManager
 
         \Application::$app->assetManager->run();
 
-        $viewPath = \Application::$app->config['main']['viewsPath'];
-
-        $this->routeViewPath = $viewPath . "/" . ltrim($this->route, " /");
-
-        $title = $this->getTitle();
+        $this->viewPath = \Application::$app->config['main']['viewsPath'];
 
         header("HTTP/1.1 200 OK");
 
-        include "$viewPath/layout.php";
+        $routeFile = preg_replace("/\..+$/", "", $this->route) . ".php";
 
-        ob_get_flush();
+        include "{$this->viewPath}/{$routeFile}";
 
         exit;
     }
 
-    private function getTitle()
+    /**
+     * @param $view
+     * @return false|string
+     */
+    public function loadView($view)
     {
+        ob_start();
 
-        $languageCode = \Application::$app->config['language']['code'];
+        include "{$this->viewPath}/$view.php";
 
-        switch ($this->route) {
-            case 'main':
-                return 'Syndicate Studio';
-                break;
-
-            case 'contacts':
-
-                return \Application::$app->config['menu'][$languageCode]['contacts']['title'] .
-                    ' — Syndicate Studio';
-
-                break;
-
-            case 'about':
-
-                return \Application::$app->config['menu'][$languageCode]['about']['title'] .
-                    ' — Syndicate Studio';
-
-                break;
-
-            case 'works':
-
-                return \Application::$app->config['menu'][$languageCode]['works']['title'] .
-                    ' — Syndicate Studio';
-
-                break;
-
-            case 'work':
-
-                $work = \Application::$app->config['works'][$this->params['id'] - 1];
-
-                return $work[1][$languageCode]['pageTitle'] . ' — Syndicate Studio';
-
-                break;
-        }
-
+        return ob_get_clean();
     }
 
 }

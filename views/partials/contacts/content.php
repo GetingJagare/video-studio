@@ -1,3 +1,6 @@
+<?php
+$languageCode = Application::$app->config['language']['code'];
+?>
 <div class="d-flex flex-column h-100">
 
     <?php include __DIR__ . '/header.php'; ?>

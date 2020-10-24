@@ -56,6 +56,9 @@ class AssetManager
                 'js' => [
                     '/dist/bundle/marquee.js'
                 ],
+                'image' => [
+                    '/dist/img/back.jpg'
+                ]
             ],
             'work' => [
                 'css' => [
@@ -75,6 +78,9 @@ class AssetManager
     /** @var string  */
     public $js = "";
 
+    /** @var string  */
+    public $preload = "";
+
     public function run()
     {
 
@@ -88,15 +94,22 @@ class AssetManager
             isset(self::ASSETS_DATA[$this->route]['js']) ? self::ASSETS_DATA[$this->route]['js'] : []
         );
 
+        $imageAssets = self::ASSETS_DATA[$this->route]['image'] ?? [];
+
         foreach ($cssAssets as $cssAsset) {
 
             $this->css .= "<link rel=\"stylesheet\" href=\"$cssAsset?v" . self::VERSION . "\" />";
 
         }
 
+        foreach ($imageAssets as $imageAsset) {
+
+            $this->preload .= "<link rel=\"preload\" href=\"$imageAsset\" as=\"image\" />";
+
+        }
+
         foreach ($jsAssets as $jsAsset) {
 
-            //$this->css .= "<link rel=\"preload\" href=\"$jsAsset\" as=\"script\"/>";
             $this->js .= "<script src=\"$jsAsset?v" . self::VERSION . "\"></script>";
 
         }

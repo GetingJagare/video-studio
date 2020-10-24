@@ -1,7 +1,6 @@
 <?php
-
+$languageCode = Application::$app->config['language']['code'];
 $worksToShow = 5;
-
 ?>
 
 <div class="main">

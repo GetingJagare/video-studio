@@ -1,5 +1,6 @@
 <?php
 
+$languageCode = Application::$app->config['language']['code'];
 $works = Application::$app->config['works'];
 $workId = Application::$app->viewManager->params['id'];
 $work = isset($works[$workId - 1]) ? $works[$workId - 1] : null;

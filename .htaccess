@@ -4,5 +4,5 @@ RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} !\.localhost$
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteCond %{REQUEST_URI} !^/(dist|assets|c)
+RewriteCond %{REQUEST_URI} !^/(dist|assets)
 RewriteRule ^ index.php

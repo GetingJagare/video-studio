@@ -1,5 +1,3 @@
-<?php $languageCode = Application::$app->config['language']['code']; ?>
-
 <!doctype html>
 <html>
 <head>
@@ -37,21 +35,14 @@
     <meta property="twitter:description" content="<?php echo Application::$app->config['main']['description']; ?>" />
 
     <?php echo Application::$app->assetManager->css; ?>
-
-    <?php
-
-    if (Application::$app->assetManager->route == 'contacts') {
-        echo '<link rel="preload" href="/dist/img/back.jpg" as="image" />';
-    }
-
-    ?>
+    <?php echo Application::$app->assetManager->preload; ?>
 
 </head>
 
 <body class="body <?php echo Application::$app->assetManager->route; ?>-page">
 <div class="black-back"></div>
 
-<?php include Application::$app->viewManager->routeViewPath . '/content.php'; ?>
+<?php echo $content ?? '' ?>
 
 <?php if ($_SERVER['HTTP_HOST'] == Application::$app->config['main']['domain']) { ?>
 <noscript><div><img src="https://mc.yandex.ru/watch/52477828" style="position:absolute; left:-9999px;" alt="" /></div></noscript>

@@ -1,5 +1,5 @@
 <?php
-    $copyright = Application::$app->config['copyright'][$languageCode];
+$copyright = Application::$app->config['copyright'][$languageCode];
 ?>
 
 <footer class="footer sticky-bottom">
