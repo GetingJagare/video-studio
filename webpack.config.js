@@ -17,6 +17,7 @@ module.exports = {
         showreel: './assets/js/showreel.js',
         works: './assets/js/works.js',
         work: './assets/js/work.js',
+        'yandex-link': './assets/js/yandex-link.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist/bundle'),
@@ -29,9 +30,13 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/env'],
+                        presets: ["@babel/preset-env"],
+                        plugins: [
+                            ["@babel/plugin-transform-runtime", {regenerator: true}]
+                        ]
                     }
-                }
+                },
+                exclude: /node_modules/,
             },
             {
                 test: /\.(sass|scss)$/,

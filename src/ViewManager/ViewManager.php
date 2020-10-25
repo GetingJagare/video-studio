@@ -2,6 +2,8 @@
 
 namespace app\ViewManager;
 
+use function app\helpers\config;
+
 /**
  * Class ViewManager
  */
@@ -26,7 +28,7 @@ class ViewManager
 
         \Application::$app->assetManager->run();
 
-        $this->viewPath = \Application::$app->config['main']['viewsPath'];
+        $this->viewPath = config()['main']['viewsPath'];
 
         header("HTTP/1.1 200 OK");
 
