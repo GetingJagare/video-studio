@@ -52,7 +52,6 @@
     <br/>
     <a style="font-size:42px;">The Olett
         <br/><br/>
-        <a href="#" data-yd-link="https://yadi.sk/i/jr03w31v1yt-cQ">Test</a>
         <a style="color: rgb(255, 255, 255) !important; text-decoration: none" href="https://works.aleams.com/olett/The_Olett_ProRes_422_HQ.mov">Ролик 1. Скачать (для заливки на YouTube)</a><br/>
         <a style="color: rgb(255, 255, 255) !important; text-decoration: none" href="https://works.aleams.com/olett/The_Olett_h265.mov" >Ролик 1. Скачать (для просмотра)</a><br/>
 </div>
