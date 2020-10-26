@@ -19,6 +19,14 @@ function view()
 }
 
 /**
+ * @return \app\AssetManager\AssetManager
+ */
+function assets()
+{
+    return app()->assetManager;
+}
+
+/**
  * @return array
  */
 function config()
@@ -26,6 +34,11 @@ function config()
     return app()->config;
 }
 
+/**
+ * @param mixed $data
+ *
+ * @return void
+ */
 function downloadFile($data)
 {
     header("Content-Type: {$data['mimetype']}");

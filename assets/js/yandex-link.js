@@ -4,12 +4,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const ydLinks = document.querySelectorAll('[data-yd-link]');
 
     let forms = [];
+    let pageOverlay;
 
-    const getYandexLink = async (linkElement, public_link) => {
+    const getYandexLink = async (linkElement, public_link, linkIndex) => {
 
         const response = await fetch(`${url}?public_key=${public_link}`);
 
-        return response.json();
+        const json = await response.json();
+
+        if (linkIndex === ydLinks.length - 1) {
+            setTimeout(() => {
+                pageOverlay.style.display = 'none';
+            }, 600);
+        }
+
+        return json;
+    };
+
+    const createPageOverlay = () => {
+
+        pageOverlay = document.createElement('div');
+
+        pageOverlay.classList.add('page-overlay');
+
+        document.head.innerHTML += '<style>' +
+            '.page-overlay { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 9999; ' +
+            ' background-color: rgba(0, 0, 0, 0.7); display: flex; justify-content: center; align-items: center; color: #fff;}' +
+            '</style>';
+
+        pageOverlay.innerHTML = '<div><div style="width: 100%; margin-bottom: 20px; text-align: center; font-size: 22px; font-family: \'SFNSText\', sans-serif;">' +
+            'Подготавливаем ссылки...</div>' +
+            '<div style="text-align: center"><img src="/assets/img/icons/preloader.svg"/></div></div>';
+
+        document.body.appendChild(pageOverlay);
+
     };
 
     const createDownloadForm = (data) => {
@@ -30,24 +58,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     };
 
-    ydLinks.forEach(async (link, i) => {
+    if (ydLinks.length) {
 
-        if (link.dataset.ydLink) {
+        createPageOverlay();
 
-            const response = await getYandexLink(link, link.dataset.ydLink);
+        ydLinks.forEach(async (link, i) => {
 
-            createDownloadForm(response);
+            if (link.dataset.ydLink) {
 
-            link.addEventListener('click', (event) => {
+                const response = await getYandexLink(link, link.dataset.ydLink, i);
 
-                event.preventDefault();
+                createDownloadForm(response);
 
-                forms[i].submit();
+                link.addEventListener('click', (event) => {
 
-            });
+                    event.preventDefault();
 
-        }
+                    forms[i].submit();
 
-    });
+                });
+
+            }
+
+        });
+
+    }
 
 });

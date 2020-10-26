@@ -1,6 +1,6 @@
 <?php
-$languageSwitcherLabel = Application::$app->config['language']['switcherLabel'];
-$languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
+$languageSwitcherLabel = $config['language']['switcherLabel'];
+$languageSwitcherUrl = $config['language']['switcherUrl'];
 ?>
 
 <nav class="navbar navbar-expand-md align-items-center mx-2">
@@ -13,16 +13,16 @@ $languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
     <div class="navbar-collapse collapse collapsible-item">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link text-nowrap text-right mx-3 my-2 p-0"
-                                    href="<?php echo Application::$app->config['menu'][$languageCode]['works']['link']; ?>">
-                    <?php echo Application::$app->config['menu'][$languageCode]['works']['title']; ?></a>
+                                    href="<?php echo $config['menu'][$languageCode]['works']['link']; ?>">
+                    <?php echo $config['menu'][$languageCode]['works']['title']; ?></a>
             </li>
             <li class="nav-item"><a class="nav-link text-nowrap text-right mx-3 my-2 p-0"
-                                    href="<?php echo Application::$app->config['menu'][$languageCode]['contacts']['link']; ?>">
-                    <?php echo Application::$app->config['menu'][$languageCode]['contacts']['title']; ?></a>
+                                    href="<?php echo $config['menu'][$languageCode]['contacts']['link']; ?>">
+                    <?php echo $config['menu'][$languageCode]['contacts']['title']; ?></a>
             </li>
             <li class="nav-item"><a class="nav-link text-nowrap text-right mx-3 my-2 p-0"
-                                    href="<?php echo Application::$app->config['menu'][$languageCode]['about']['link']; ?>">
-                    <?php echo Application::$app->config['menu'][$languageCode]['about']['title']; ?></a>
+                                    href="<?php echo $config['menu'][$languageCode]['about']['link']; ?>">
+                    <?php echo $config['menu'][$languageCode]['about']['title']; ?></a>
             </li>
             <!--<li class="nav-item"><a class="nav-link text-nowrap text-right mx-3 my-2 p-0 nav-language-switcher"
                                     href="<?php /*echo $languageSwitcherUrl; */?>">

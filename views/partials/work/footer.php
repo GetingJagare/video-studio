@@ -1,8 +1,8 @@
 <?php
-$copyright = Application::$app->config['copyright'][$languageCode];
+$copyright = $config['copyright'][$languageCode];
 
-$works = Application::$app->config['works'];
-$workId = Application::$app->viewManager->params['id'];
+$works = $config['works'];
+$workId = \app\helpers\view()->params['id'];
 $work = $works[$workId - 1];
 
 ?>

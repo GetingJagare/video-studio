@@ -1,5 +1,6 @@
 <?php
-$languageCode = Application::$app->config['language']['code'];
+$config = \app\helpers\config();
+$languageCode = $config['language']['code'];
 ?>
 <div class="portfolio">
 
@@ -9,9 +10,9 @@ $languageCode = Application::$app->config['language']['code'];
         <?php
         $i = 1;
 
-        shuffle(Application::$app->config['works']);
+        shuffle($config['works']);
 
-        foreach (Application::$app->config['works'] as $i => $work) {
+        foreach ($config['works'] as $i => $work) {
 
             echo '<a href="' . $work[1][$languageCode]['url'] . '" class="work work_' . ($i % 2 == 0 ? 'even' : 'odd') .
                 ($i == 0 ? ' work_first' : '') . '">';
@@ -33,7 +34,5 @@ $languageCode = Application::$app->config['language']['code'];
     </div>
 
     <?php include "footer.php"; ?>
-
-    <?php echo Application::$app->assetManager->js; ?>
 
 </div>

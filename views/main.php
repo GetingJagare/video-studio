@@ -1,5 +1,5 @@
 <?php
 $title = 'Syndicate Studio';
-$content = Application::$app->viewManager->loadView("/partials/main/content");
+$content = \app\helpers\view()->loadView("/partials/main/content");
 include "layouts/common.php";
 ?>

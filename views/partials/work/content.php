@@ -1,8 +1,8 @@
 <?php
-
-$languageCode = Application::$app->config['language']['code'];
-$works = Application::$app->config['works'];
-$workId = Application::$app->viewManager->params['id'];
+$config = \app\helpers\config();
+$languageCode = $config['language']['code'];
+$works = $config['works'];
+$workId = \app\helpers\view()->params['id'];
 $work = isset($works[$workId - 1]) ? $works[$workId - 1] : null;
 
 if (!$work) {
@@ -16,8 +16,8 @@ if (!$work) {
 ?>
 
 <?php
-$languageSwitcherLabel = Application::$app->config['language']['switcherLabel'];
-$languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
+$languageSwitcherLabel = $config['language']['switcherLabel'];
+$languageSwitcherUrl = $config['language']['switcherUrl'];
 ?>
 
 <div class="d-flex flex-column h-100">
@@ -53,11 +53,9 @@ $languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
     </div>
 
     <?php
-    $copyright = Application::$app->config['copyright'][$languageCode];
+    $copyright = $config['copyright'][$languageCode];
     ?>
 
     <?php include "footer.php"; ?>
 
 </div>
-
-<?php echo Application::$app->assetManager->js; ?>

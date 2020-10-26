@@ -1,6 +1,7 @@
 <?php
-$languageCode = Application::$app->config['language']['code'];
-$title = \Application::$app->config['menu'][$languageCode]['about']['title'] . ' — Syndicate Studio';
-$content = Application::$app->viewManager->loadView("/partials/about/content");
+$config = \app\helpers\config();
+$languageCode = $config['language']['code'];
+$title = $config['menu'][$languageCode]['about']['title'] . ' — Syndicate Studio';
+$content = \app\helpers\view()->loadView("/partials/about/content");
 include "layouts/common.php";
 ?>

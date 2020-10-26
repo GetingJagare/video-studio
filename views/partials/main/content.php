@@ -1,5 +1,6 @@
 <?php
-$languageCode = Application::$app->config['language']['code'];
+$config = \app\helpers\config();
+$languageCode = $config['language']['code'];
 $worksToShow = 5;
 ?>
 
@@ -9,7 +10,7 @@ $worksToShow = 5;
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" preload="metadata"
                class="showreel__video">
             <?php
-            foreach (Application::$app->config['showreel'][$languageCode]['videoFiles'] as $videoFile) {
+            foreach ($config['showreel'][$languageCode]['videoFiles'] as $videoFile) {
                 preg_match("/(.+)([^\/])+$/", $videoFile['src'], $matches);
                 echo '<source src="' . $videoFile['src'] . '" type="' . $videoFile['type'] . '">';
             }
@@ -17,22 +18,22 @@ $worksToShow = 5;
         </video>
         <div class="syndicate-logo text-center">
             <img class="img-fluid"
-                 src="<?php echo Application::$app->config['showreel'][$languageCode]['logoImage']; ?>"
+                 src="<?php echo $config['showreel'][$languageCode]['logoImage']; ?>"
                  alt="Syndicate Logo">
             <br>
             <div class="mt-3">
-                <?php echo Application::$app->config['main']['title'][$languageCode]; ?>
+                <?php echo $config['main']['title'][$languageCode]; ?>
             </div>
         </div>
-        <div class="syndicate-logline"><?php echo Application::$app->config['showreel'][$languageCode]['description']; ?></div>
+        <div class="syndicate-logline"><?php echo $config['showreel'][$languageCode]['description']; ?></div>
         <div class="chevron"></div>
     </div>
 
     <div class="under-showreel">
 
         <?php
-        $languageSwitcherLabel = Application::$app->config['language']['switcherLabel'];
-        $languageSwitcherUrl = Application::$app->config['language']['switcherUrl'];
+        $languageSwitcherLabel = $config['language']['switcherLabel'];
+        $languageSwitcherUrl = $config['language']['switcherUrl'];
         ?>
 
         <?php include "header.php"; ?>
@@ -41,9 +42,9 @@ $worksToShow = 5;
 
             <?php
 
-            shuffle(Application::$app->config['works']);
+            shuffle($config['works']);
 
-            foreach (Application::$app->config['works'] as $i => $work) {
+            foreach ($config['works'] as $i => $work) {
 
                 echo '<a href="' . $work[1][$languageCode]['url'] . '" class="work work_' . ($i % 2 == 0 ? 'even' : 'odd') .
                     ($i == 0 ? ' work_first' : '') . '">';
@@ -66,12 +67,10 @@ $worksToShow = 5;
         </div>
 
         <?php
-        $copyright = Application::$app->config['copyright'][$languageCode];
+        $copyright = $config['copyright'][$languageCode];
         ?>
 
         <?php include "footer.php"; ?>
     </div>
-
-    <?php echo Application::$app->assetManager->js; ?>
 
 </div>
